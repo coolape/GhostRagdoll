@@ -4,29 +4,59 @@ using UnityEngine;
 
 public class RdAction : MonoBehaviour
 {
-    public HingeJoint headJoint;
-    public HingeJoint leftLeg;
-    public HingeJoint rightLeg;
-
+    public Transform root;//根节点
+    public HingeJoint head;//头
+    public CharacterJoint spine;//脊柱
+    public CharacterJoint leftUpperArm;//左上臂
+    public CharacterJoint leftForeArm;//左前臂
+    public HingeJoint leftThigh; //左大腿
+    public HingeJoint leftCalf;//左小腿
+    public HingeJoint leftFoot;//左脚
+    public CharacterJoint rightUpperArm;//右上臂
+    public CharacterJoint rightForeArm;//右前臂
+    public HingeJoint rightThigh; //右大腿
+    public HingeJoint rightCalf;//右小腿
+    public HingeJoint rightFoot;//右脚
 
     // Update is called once per frame
     void Update()
     {
-
+        walk();
     }
+    float targetPos = 90;
+    int flag = 1;
     public void walk()
     {
-        leftLeg.useMotor = false;
-        rightLeg.useMotor = false;
-        leftLeg.useSpring = true;
-        rightLeg.useSpring = true;
-
-        JointSpring js = leftLeg.spring;
-        if(js.targetPosition > 180)
+        leftThigh.useMotor = false;
+        rightThigh.useMotor = false;
+        leftThigh.useSpring = true;
+        rightThigh.useSpring = true;
+        if(targetPos > 270 && flag > 0)
         {
-            js.targetPosition = js.targetPosition - 360;
+            flag = -1;
         }
-        js.targetPosition = Mathf.Clamp(js.targetPosition, leftLeg.limits.min +5, leftLeg.limits.max - 5 );
-        leftLeg.spring = js;
+        else if(targetPos < 90 && flag < 0)
+        {
+            flag = 1;
+        }
+        targetPos += Time.deltaTime * 10 * flag;
+        swingThigh(targetPos, leftThigh, false);
+        swingThigh(targetPos, rightThigh, true);
+    }
+
+    public void swingThigh(float targetPos, HingeJoint thigh, bool inverse)
+    {
+        JointSpring js = thigh.spring;
+        js.targetPosition = targetPos;
+        //if (js.targetPosition > 180)
+        //{
+        //    js.targetPosition = js.targetPosition - 360;
+        //}
+        js.targetPosition = Mathf.Clamp(js.targetPosition, thigh.limits.min + 5, thigh.limits.max - 5);
+        if(inverse)
+        {
+            js.targetPosition = js.targetPosition * -1;
+        }
+        thigh.spring = js;
     }
 }
