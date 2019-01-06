@@ -31,15 +31,15 @@ public class RdAction : MonoBehaviour
         rightThigh.useMotor = false;
         leftThigh.useSpring = true;
         rightThigh.useSpring = true;
-        if(targetPos > 270 && flag > 0)
+        if(targetPos > 60 && flag > 0)
         {
             flag = -1;
         }
-        else if(targetPos < 90 && flag < 0)
+        else if(targetPos < -60 && flag < 0)
         {
             flag = 1;
         }
-        targetPos += Time.deltaTime * 10 * flag;
+        targetPos += Time.deltaTime * 300 * flag;
         swingThigh(targetPos, leftThigh, false);
         swingThigh(targetPos, rightThigh, true);
     }
@@ -53,10 +53,10 @@ public class RdAction : MonoBehaviour
         //    js.targetPosition = js.targetPosition - 360;
         //}
         js.targetPosition = Mathf.Clamp(js.targetPosition, thigh.limits.min + 5, thigh.limits.max - 5);
-        if(inverse)
-        {
-            js.targetPosition = js.targetPosition * -1;
-        }
+        //if(inverse)
+        //{
+        //    js.targetPosition = js.targetPosition;
+        //}
         thigh.spring = js;
     }
 }
