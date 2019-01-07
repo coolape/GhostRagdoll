@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: ecb385c5026aa5f42b377736b03df1c8
-timeCreated: 1545983809
+guid: d1ebe144afb6db047a57dd671c17c2e3
+timeCreated: 1546835254
 licenseType: Pro
 ModelImporter:
   serializedVersion: 19
@@ -33,8 +33,7 @@ ModelImporter:
     100050: Bip001 R Toe02
     100052: Bip001 R UpperArm
     100054: Bip001 Spine
-    100056: Box001
-    100058: mesh_Base002
+    100056: mesh_Base002
     400000: //RootNode
     400002: Bip001
     400004: Bip001 Head
@@ -63,12 +62,8 @@ ModelImporter:
     400050: Bip001 R Toe02
     400052: Bip001 R UpperArm
     400054: Bip001 Spine
-    400056: Box001
-    400058: mesh_Base002
-    2300000: Box001
-    3300000: Box001
+    400056: mesh_Base002
     4300000: mesh_Base002
-    4300002: Box001
     7400000: Take 001
     9500000: //RootNode
     13700000: mesh_Base002
