@@ -548,6 +548,18 @@ HingeJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!114 &576874199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 576874195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f34a84a1f36e44f50b5266d3f59aa113, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &611105689
 GameObject:
   m_ObjectHideFlags: 0
@@ -1280,18 +1292,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d1b5b5edb35a490db8555bc6cfe6a41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   root: {fileID: 0}
   head: {fileID: 0}
   spine: {fileID: 0}
   leftUpperArm: {fileID: 0}
   leftForeArm: {fileID: 0}
-  leftThigh: {fileID: 576874198}
-  leftCalf: {fileID: 1732151024}
+  leftThigh: {fileID: 576874199}
+  leftCalf: {fileID: 0}
   leftFoot: {fileID: 0}
   rightUpperArm: {fileID: 0}
   rightForeArm: {fileID: 0}
-  rightThigh: {fileID: 1911120814}
-  rightCalf: {fileID: 852729164}
+  rightThigh: {fileID: 1911120811}
+  rightCalf: {fileID: 0}
   rightFoot: {fileID: 0}
 --- !u!65 &1538132767
 BoxCollider:
@@ -1616,6 +1652,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 20480709}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1911120811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1911120810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f34a84a1f36e44f50b5266d3f59aa113, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!65 &1911120812
 BoxCollider:
   m_ObjectHideFlags: 0

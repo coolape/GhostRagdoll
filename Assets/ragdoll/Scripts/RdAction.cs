@@ -4,21 +4,30 @@ using UnityEngine;
 
 public class RdAction : MonoBehaviour
 {
+    public AnimationCurve curve;
+
     public Transform root;//根节点
-    public HingeJoint head;//头
-    public CharacterJoint spine;//脊柱
-    public CharacterJoint leftUpperArm;//左上臂
-    public CharacterJoint leftForeArm;//左前臂
-    public HingeJoint leftThigh; //左大腿
-    public HingeJoint leftCalf;//左小腿
-    public HingeJoint leftFoot;//左脚
-    public CharacterJoint rightUpperArm;//右上臂
-    public CharacterJoint rightForeArm;//右前臂
-    public HingeJoint rightThigh; //右大腿
-    public HingeJoint rightCalf;//右小腿
-    public HingeJoint rightFoot;//右脚
+    public RdJoint head;//头
+    public RdJoint spine;//脊柱
+    public RdJoint leftUpperArm;//左上臂
+    public RdJoint leftForeArm;//左前臂
+    public RdJoint leftThigh; //左大腿
+    public RdJoint leftCalf;//左小腿
+    public RdJoint leftFoot;//左脚
+    public RdJoint rightUpperArm;//右上臂
+    public RdJoint rightForeArm;//右前臂
+    public RdJoint rightThigh; //右大腿
+    public RdJoint rightCalf;//右小腿
+    public RdJoint rightFoot;//右脚
+
+    private void Start()
+    {
+        leftThigh.spring(600, -45, 45, 10, curve, -45, 90, true, null);
+        rightThigh.spring(600, 45, -45, 10, curve, -45, 90, true, null);
+    }
 
     // Update is called once per frame
+    /*
     void Update()
     {
         walk();
@@ -59,4 +68,5 @@ public class RdAction : MonoBehaviour
         //}
         thigh.spring = js;
     }
+    */
 }
