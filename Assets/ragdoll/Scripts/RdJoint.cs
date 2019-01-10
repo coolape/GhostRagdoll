@@ -33,7 +33,7 @@ public class RdJoint : MonoBehaviour
             {
                 if (isLoop)
                 {
-                    flag *= -1;
+                    flag = -1;
                 }
                 else
                 {
@@ -43,7 +43,7 @@ public class RdJoint : MonoBehaviour
                 }
             } else if(time <= 0)
             {
-                flag *= -1;
+                flag = 1;
             }
         }
     }

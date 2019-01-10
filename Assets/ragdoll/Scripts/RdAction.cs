@@ -22,8 +22,8 @@ public class RdAction : MonoBehaviour
 
     private void Start()
     {
-        leftThigh.spring(600, -45, 45, 10, curve, -45, 90, true, null);
-        rightThigh.spring(600, 45, -45, 10, curve, -45, 90, true, null);
+        leftThigh.spring(600, -60, 60, 5, curve, -60, 90, true, null);
+        rightThigh.spring(600, 60, -60, 5, curve, -60, 90, true, null);
     }
 
     // Update is called once per frame
