@@ -1,10 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Coolape;
 
 public class RdAction : MonoBehaviour
 {
     public AnimationCurve curve;
+    public AnimationCurve curve2;
+    public float speed = 1;
 
     public Transform root;//根节点
     public RdJoint head;//头
@@ -22,8 +25,41 @@ public class RdAction : MonoBehaviour
 
     private void Start()
     {
-        leftThigh.spring(600, -60, 60, 5, curve, -60, 90, true, null);
-        rightThigh.spring(600, 60, -60, 5, curve, -60, 90, true, null);
+        leftFinish(null);
+    }
+
+    void leftFinish(params object[] obgs)
+    {
+        float from = 0;
+        float to = 0;
+        if(leftThigh.joint.spring.targetPosition > 0)
+        {
+            from = 10;
+            to = -30;
+        }
+        else
+        {
+            from = -30;
+            to = 10;
+        }
+        leftThigh.spring(600, from, to, speed, curve, -60, 90, false, (Callback)rightFinish);
+    }
+
+    void rightFinish(params object[] obgs)
+    {
+        float from = 0;
+        float to = 0;
+        if (rightThigh.joint.spring.targetPosition > 0)
+        {
+            from = 10;
+            to = -30;
+        }
+        else
+        {
+            from = -30;
+            to = 10;
+        }
+        rightThigh.spring(600, from, to, speed, curve2, -60, 90, false, (Callback)leftFinish);
     }
 
     // Update is called once per frame
