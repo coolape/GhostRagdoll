@@ -846,6 +846,7 @@ public class ECLProjectManager : EditorWindow
 		bool ret = false;
 		if (obj != null) {
 			if (obj is GameObject) {
+                obj = PrefabUtility.LoadPrefabContents(AssetDatabase.GetAssetPath(obj));
 				CLSharedAssets sharedAsset = ((GameObject)obj).GetComponent<CLSharedAssets> ();
 				if (sharedAsset == null && CLSharedAssetsInspector.isCanAddSharedAssetProc ((GameObject)obj)) {
 					sharedAsset = ((GameObject)obj).AddComponent<CLSharedAssets> ();

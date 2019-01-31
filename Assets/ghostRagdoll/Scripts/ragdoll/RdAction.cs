@@ -25,7 +25,7 @@ public class RdAction : MonoBehaviour
 
     private void Start()
     {
-        leftFinish(null);
+        rightFinish(null);
     }
 
     void leftFinish(params object[] obgs)
@@ -34,13 +34,13 @@ public class RdAction : MonoBehaviour
         float to = 0;
         if(leftThigh.joint.spring.targetPosition > 0)
         {
-            from = 10;
+            from = 20;
             to = -30;
         }
         else
         {
             from = -30;
-            to = 10;
+            to = 20;
         }
         leftThigh.spring(600, from, to, speed, curve, -60, 90, false, (Callback)rightFinish);
     }
@@ -51,13 +51,13 @@ public class RdAction : MonoBehaviour
         float to = 0;
         if (rightThigh.joint.spring.targetPosition > 0)
         {
-            from = 10;
+            from = 20;
             to = -30;
         }
         else
         {
             from = -30;
-            to = 10;
+            to = 20;
         }
         rightThigh.spring(600, from, to, speed, curve2, -60, 90, false, (Callback)leftFinish);
     }

@@ -114,7 +114,7 @@ GameObject:
   - component: {fileID: 11400002}
   - component: {fileID: 11400000}
   m_Layer: 5
-  m_Name: TempPanelMask4Panel
+  m_Name: PanelMask4Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
