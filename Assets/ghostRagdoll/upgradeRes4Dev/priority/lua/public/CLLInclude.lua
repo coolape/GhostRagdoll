@@ -338,9 +338,9 @@ do
 
     -- 模式
     GameMode = {
-        city = 0,
-        map = 1,
-        battle = 2
+        none = 0,
+        menu = 1,
+        game = 2,
     }
 
     -- 角色的状态

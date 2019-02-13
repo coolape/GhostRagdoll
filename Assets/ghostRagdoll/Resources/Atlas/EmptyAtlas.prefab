@@ -46,8 +46,7 @@ MonoBehaviour:
   material: {fileID: 0}
   mSprites: []
   mPixelSize: 1
-  mReplacement: {fileID: 4202052259471349902, guid: b57c03c1cde9e452c86e0b7dfe116d03,
-    type: 3}
+  mReplacement: {fileID: 0}
   mCoordinates: 0
   sprites: []
   _isBorrowSpriteMode: 1

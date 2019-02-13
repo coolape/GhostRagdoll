@@ -45,7 +45,7 @@ do
         end
         CLPanelManager.self.mainPanelName = "PanelGame"
         -- 添加屏蔽字
-        MyMain.self:invoke4Lua(CLLPStart.addShieldWords, 1)
+        --MyMain.self:invoke4Lua(CLLPStart.addShieldWords, 1)
 
         --TODO:other lua scripts
     end
@@ -190,7 +190,7 @@ do
     function CLLPStart._EnterGame(isNewPlayer)
         CLPanelManager.getPanelAsy("PanelSceneManager",
                 function(p)
-                    p:setData({ mode = GameMode.city })
+                    p:setData({ mode = GameMode.game })
                     CLPanelManager.showTopPanel(p)
 
                     local p2 = CLPanelManager.getPanel("PanelSplash")

@@ -222,7 +222,7 @@ MonoBehaviour:
   bottomType: 1
   topType: 1
   atlasName: atlasAllReal
-  mAtlas: {fileID: 4202052259471349902, guid: b57c03c1cde9e452c86e0b7dfe116d03, type: 3}
+  mAtlas: {fileID: 14, guid: b57c03c1cde9e452c86e0b7dfe116d03, type: 3}
   mSpriteName: public_empty
   mFillCenter: 1
   isGrayMode: 0
@@ -594,7 +594,7 @@ MonoBehaviour:
   bottomType: 1
   topType: 1
   atlasName: atlasAllReal
-  mAtlas: {fileID: 4202052259471349902, guid: b57c03c1cde9e452c86e0b7dfe116d03, type: 3}
+  mAtlas: {fileID: 14, guid: b57c03c1cde9e452c86e0b7dfe116d03, type: 3}
   mSpriteName: public_empty
   mFillCenter: 1
   isGrayMode: 0
@@ -765,8 +765,7 @@ MonoBehaviour:
   atlasAllRealName: atlasAllReal
   emptFont: {fileID: 8539023086901719059, guid: d5b0b3bad0b954b078f6bf04e8374c28,
     type: 3}
-  emptAtlas: {fileID: 4039475001549686612, guid: c0a503be5cd1c4670b3396528b151988,
-    type: 3}
+  emptAtlas: {fileID: 33, guid: c0a503be5cd1c4670b3396528b151988, type: 3}
   uiPublicRoot: {fileID: 657962862}
 --- !u!114 &657962864
 MonoBehaviour:
@@ -1686,7 +1685,7 @@ MonoBehaviour:
   bottomType: 1
   topType: 1
   atlasName: atlasAllReal
-  mAtlas: {fileID: 4202052259471349902, guid: b57c03c1cde9e452c86e0b7dfe116d03, type: 3}
+  mAtlas: {fileID: 14, guid: b57c03c1cde9e452c86e0b7dfe116d03, type: 3}
   mSpriteName: public_empty
   mFillCenter: 1
   isGrayMode: 0
