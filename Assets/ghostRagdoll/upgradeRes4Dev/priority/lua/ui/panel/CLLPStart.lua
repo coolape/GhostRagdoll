@@ -43,7 +43,7 @@ do
                 ReporterMessageReceiver.self.gameObject:SetActive(false)
             end
         end
-        CLPanelManager.self.mainPanelName = "PanelMain"
+        CLPanelManager.self.mainPanelName = "PanelGame"
         -- 添加屏蔽字
         MyMain.self:invoke4Lua(CLLPStart.addShieldWords, 1)
 
@@ -61,9 +61,7 @@ do
 
     -- 刷新页面
     function CLLPStart.refresh()
-        if not isLogined then
-            CLLPStart.createPanel()
-        end
+        CLLPStart.createPanel()
     end
 
     -- 关闭页面
@@ -91,7 +89,8 @@ do
         local count = #(lateLoadPanels)
         if (panelIndex >= count) then
             --已经加载完
-            CLLPStart.connectServer()
+            --CLLPStart.connectServer()
+            CLLPStart._EnterGame()
         end
     end
 

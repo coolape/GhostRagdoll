@@ -81,8 +81,8 @@ MonoBehaviour:
   bottomType: 1
   topType: 1
   atlasName: EmptyAtlas
-  mAtlas: {fileID: 0}
-  mSpriteName: public__empty
+  mAtlas: {fileID: 4039475001549686612, guid: c0a503be5cd1c4670b3396528b151988, type: 3}
+  mSpriteName: public_empty
   mFillCenter: 1
   isGrayMode: 0
 --- !u!65 &560138593458847147
@@ -178,8 +178,8 @@ MonoBehaviour:
   bottomType: 1
   topType: 1
   atlasName: atlasAllReal
-  mAtlas: {fileID: 0}
-  mSpriteName: public__empty
+  mAtlas: {fileID: 4202052259471349902, guid: b57c03c1cde9e452c86e0b7dfe116d03, type: 3}
+  mSpriteName: public_empty
   mFillCenter: 1
   isGrayMode: 0
 --- !u!1 &1929376615705089577
@@ -253,7 +253,7 @@ MonoBehaviour:
   aspectRatio: 1
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
-  mFont: {fileID: 0}
+  mFont: {fileID: 8539023086901719059, guid: d5b0b3bad0b954b078f6bf04e8374c28, type: 3}
   mText: "\u786E\u5B9A"
   mFontSize: 30
   mFontStyle: 0
@@ -362,8 +362,8 @@ MonoBehaviour:
   bottomType: 1
   topType: 1
   atlasName: atlasAllReal
-  mAtlas: {fileID: 0}
-  mSpriteName: public__empty
+  mAtlas: {fileID: 4202052259471349902, guid: b57c03c1cde9e452c86e0b7dfe116d03, type: 3}
+  mSpriteName: public_empty
   mFillCenter: 1
   isGrayMode: 0
 --- !u!1 &3080283149967116307
@@ -439,7 +439,7 @@ MonoBehaviour:
   aspectRatio: 62.5
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
-  mFont: {fileID: 0}
+  mFont: {fileID: 8539023086901719059, guid: d5b0b3bad0b954b078f6bf04e8374c28, type: 3}
   mText: 1
   mFontSize: 30
   mFontStyle: 0
@@ -751,8 +751,8 @@ MonoBehaviour:
   bottomType: 1
   topType: 1
   atlasName: atlasAllReal
-  mAtlas: {fileID: 0}
-  mSpriteName: public__empty
+  mAtlas: {fileID: 4202052259471349902, guid: b57c03c1cde9e452c86e0b7dfe116d03, type: 3}
+  mSpriteName: public_empty
   mFillCenter: 1
   isGrayMode: 0
 --- !u!1 &5539471529150124488
@@ -959,8 +959,8 @@ MonoBehaviour:
   bottomType: 1
   topType: 1
   atlasName: atlasAllReal
-  mAtlas: {fileID: 0}
-  mSpriteName: public__empty
+  mAtlas: {fileID: 4202052259471349902, guid: b57c03c1cde9e452c86e0b7dfe116d03, type: 3}
+  mSpriteName: public_empty
   mFillCenter: 1
   isGrayMode: 0
 --- !u!1 &6900994711253393906
@@ -1458,7 +1458,7 @@ MonoBehaviour:
   aspectRatio: 2
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
-  mFont: {fileID: 0}
+  mFont: {fileID: 8539023086901719059, guid: d5b0b3bad0b954b078f6bf04e8374c28, type: 3}
   mText: "\u53D6\u6D88"
   mFontSize: 30
   mFontStyle: 0

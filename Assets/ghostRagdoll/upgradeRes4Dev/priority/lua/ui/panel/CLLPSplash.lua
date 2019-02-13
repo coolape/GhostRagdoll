@@ -187,7 +187,9 @@ do
     end
 
     function CLLPSplash.accountLogin()
-        getPanelAsy("PanelLogin", onLoadedPanelTT, CLLPSplash.onAccountLogin)
+        --getPanelAsy("PanelLogin", onLoadedPanelTT, CLLPSplash.onAccountLogin)  -- 跳过登录
+
+        CLLPSplash.checkHotUpgrade()
     end
 
     function CLLPSplash.onAccountLogin(_user, _server)

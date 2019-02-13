@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2141246625527405922}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6942517473116181623}
@@ -64,13 +64,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 0, g: 0, b: 0, a: 0.5019608}
   mPivot: 4
-  mWidth: 751
-  mHeight: 1334
+  mWidth: 1281
+  mHeight: 720
   mDepth: 2
   autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 0.5629685
+  aspectRatio: 1.7791667
   mType: 0
   mFillDirection: 4
   mFillAmount: 1
@@ -82,8 +82,8 @@ MonoBehaviour:
   bottomType: 1
   topType: 1
   atlasName: EmptyAtlas
-  mAtlas: {fileID: 0}
-  mSpriteName: public__empty
+  mAtlas: {fileID: 4039475001549686612, guid: c0a503be5cd1c4670b3396528b151988, type: 3}
+  mSpriteName: public_empty
   mFillCenter: 1
   isGrayMode: 0
 --- !u!65 &4359468133066122592
@@ -97,7 +97,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 751, y: 1334, z: 0}
+  m_Size: {x: 1281, y: 720, z: 0}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &2193592094484485760
 MonoBehaviour:
@@ -123,13 +123,13 @@ MonoBehaviour:
     mParameters:
     - obj: {fileID: 0}
       field: 
-      name: 
+      name: gameObj
     - obj: {fileID: 8705062255982140199}
       field: name
-      name: 
+      name: funcName
     - obj: {fileID: 0}
       field: 
-      name: 
+      name: paras
     oneShot: 0
   onDoubleClick: []
   onDragStart: []

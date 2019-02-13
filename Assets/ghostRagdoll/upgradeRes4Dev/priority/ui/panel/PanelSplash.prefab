@@ -55,7 +55,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1391516721494548976}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 197, y: -1, z: 0}
+  m_LocalPosition: {x: 197, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4903458976623197756}
@@ -126,7 +126,7 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 6
-  mWidth: 164
+  mWidth: 154
   mHeight: 22
   mDepth: 10
   autoResizeBoxCollider: 0
@@ -135,7 +135,7 @@ MonoBehaviour:
   aspectRatio: 9.636364
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
-  mFont: {fileID: 0}
+  mFont: {fileID: 8539023086901719059, guid: d5b0b3bad0b954b078f6bf04e8374c28, type: 3}
   mText: "[ffff00]QQ\u7FA4:[-]123456789"
   mFontSize: 22
   mFontStyle: 0
@@ -306,7 +306,7 @@ MonoBehaviour:
   aspectRatio: 4.6
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
-  mFont: {fileID: 0}
+  mFont: {fileID: 8539023086901719059, guid: d5b0b3bad0b954b078f6bf04e8374c28, type: 3}
   mText: 100%
   mFontSize: 25
   mFontStyle: 0
@@ -406,7 +406,7 @@ MonoBehaviour:
   aspectRatio: 4.6
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
-  mFont: {fileID: 0}
+  mFont: {fileID: 8539023086901719059, guid: d5b0b3bad0b954b078f6bf04e8374c28, type: 3}
   mText: 100%
   mFontSize: 25
   mFontStyle: 0
@@ -460,7 +460,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2974131591313794415}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -375, y: 667, z: 0}
+  m_LocalPosition: {x: -640, y: 360, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2878765248640126013}
@@ -623,7 +623,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 1
   renderQueue: 0
-  startingRenderQueue: 3002
+  startingRenderQueue: 3000
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 0
@@ -736,8 +736,8 @@ MonoBehaviour:
   bottomType: 1
   topType: 1
   atlasName: EmptyAtlas
-  mAtlas: {fileID: 0}
-  mSpriteName: public__empty
+  mAtlas: {fileID: 4039475001549686612, guid: c0a503be5cd1c4670b3396528b151988, type: 3}
+  mSpriteName: public_empty
   mFillCenter: 1
   isGrayMode: 0
 --- !u!1 &6020691839503365815
@@ -820,8 +820,8 @@ MonoBehaviour:
   bottomType: 1
   topType: 1
   atlasName: EmptyAtlas
-  mAtlas: {fileID: 0}
-  mSpriteName: public__empty
+  mAtlas: {fileID: 4039475001549686612, guid: c0a503be5cd1c4670b3396528b151988, type: 3}
+  mSpriteName: public_empty
   mFillCenter: 1
   isGrayMode: 0
 --- !u!1 &6414870318166880449
@@ -886,13 +886,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 0, g: 0, b: 0, a: 0.633}
   mPivot: 4
-  mWidth: 750
+  mWidth: 1280
   mHeight: 60
   mDepth: 2
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 12.5
+  aspectRatio: 21.333334
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -904,8 +904,8 @@ MonoBehaviour:
   bottomType: 1
   topType: 1
   atlasName: EmptyAtlas
-  mAtlas: {fileID: 0}
-  mSpriteName: public__empty
+  mAtlas: {fileID: 4039475001549686612, guid: c0a503be5cd1c4670b3396528b151988, type: 3}
+  mSpriteName: public_empty
   mFillCenter: 1
   isGrayMode: 0
 --- !u!1 &7718222978565808413
@@ -988,8 +988,8 @@ MonoBehaviour:
   bottomType: 1
   topType: 1
   atlasName: EmptyAtlas
-  mAtlas: {fileID: 0}
-  mSpriteName: public__empty
+  mAtlas: {fileID: 4039475001549686612, guid: c0a503be5cd1c4670b3396528b151988, type: 3}
+  mSpriteName: public_empty
   mFillCenter: 1
   isGrayMode: 0
 --- !u!1 &8045669394195667316
@@ -1072,8 +1072,8 @@ MonoBehaviour:
   bottomType: 1
   topType: 1
   atlasName: EmptyAtlas
-  mAtlas: {fileID: 0}
-  mSpriteName: public__empty
+  mAtlas: {fileID: 4039475001549686612, guid: c0a503be5cd1c4670b3396528b151988, type: 3}
+  mSpriteName: public_empty
   mFillCenter: 1
   isGrayMode: 0
 --- !u!1 &8101125146753417638
@@ -1138,7 +1138,7 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 3
-  mWidth: 64
+  mWidth: 70
   mHeight: 20
   mDepth: 5
   autoResizeBoxCollider: 0
@@ -1147,7 +1147,7 @@ MonoBehaviour:
   aspectRatio: 4.4
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
-  mFont: {fileID: 0}
+  mFont: {fileID: 8539023086901719059, guid: d5b0b3bad0b954b078f6bf04e8374c28, type: 3}
   mText: Version
   mFontSize: 20
   mFontStyle: 0
@@ -1202,7 +1202,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8258082283988901263}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2323888020467383468}
@@ -1223,29 +1223,29 @@ MonoBehaviour:
   leftAnchor:
     target: {fileID: 2323888020467383468}
     relative: 0
-    absolute: 0
+    absolute: -2
   rightAnchor:
     target: {fileID: 2323888020467383468}
     relative: 1
-    absolute: 0
+    absolute: 2
   bottomAnchor:
     target: {fileID: 2323888020467383468}
     relative: 0
-    absolute: 0
+    absolute: -2
   topAnchor:
     target: {fileID: 2323888020467383468}
     relative: 1
-    absolute: 0
+    absolute: 2
   updateAnchors: 1
   mColor: {r: 0, g: 0.751724, b: 1, a: 0}
   mPivot: 4
-  mWidth: 750
-  mHeight: 1334
+  mWidth: 1284
+  mHeight: 724
   mDepth: 0
   autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 0.5622189
+  aspectRatio: 1.7777778
   mType: 0
   mFillDirection: 4
   mFillAmount: 1
@@ -1257,8 +1257,8 @@ MonoBehaviour:
   bottomType: 1
   topType: 1
   atlasName: EmptyAtlas
-  mAtlas: {fileID: 0}
-  mSpriteName: public__empty
+  mAtlas: {fileID: 4039475001549686612, guid: c0a503be5cd1c4670b3396528b151988, type: 3}
+  mSpriteName: public_empty
   mFillCenter: 1
   isGrayMode: 0
 --- !u!65 &2653508904878682513
@@ -1272,7 +1272,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 750, y: 1334, z: 0}
+  m_Size: {x: 1284, y: 724, z: 0}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8338876049515252523
 GameObject:
@@ -1299,7 +1299,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8338876049515252523}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -667, z: 0}
+  m_LocalPosition: {x: 0, y: -360, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1206463081561267212}
@@ -1399,7 +1399,7 @@ MonoBehaviour:
   aspectRatio: 16.8
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
-  mFont: {fileID: 0}
+  mFont: {fileID: 8539023086901719059, guid: d5b0b3bad0b954b078f6bf04e8374c28, type: 3}
   mText: "\u5728\u5546\u57CE\u53EF\u4EE5\u8D2D\u4E70\u597D\u591A\u725Bx\u7684\u4E1C\u4E1C\uFF0C\u8D85\u9177"
   mFontSize: 20
   mFontStyle: 0
@@ -1486,7 +1486,7 @@ MonoBehaviour:
     mParameters:
     - obj: {fileID: 0}
       field: 
-      name: 
+      name: go
     oneShot: 0
   foreground: {fileID: 0}
   rawValue: 1

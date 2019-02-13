@@ -150,19 +150,19 @@ MonoBehaviour:
   leftAnchor:
     target: {fileID: 6095252970466011176}
     relative: 0
-    absolute: 0
+    absolute: -2
   rightAnchor:
     target: {fileID: 6095252970466011176}
     relative: 1
-    absolute: 0
+    absolute: 2
   bottomAnchor:
     target: {fileID: 6095252970466011176}
     relative: 0
-    absolute: 0
+    absolute: -2
   topAnchor:
     target: {fileID: 6095252970466011176}
     relative: 1
-    absolute: 0
+    absolute: 2
   updateAnchors: 1
   mColor: {r: 0, g: 0.751724, b: 1, a: 0}
   mPivot: 4
@@ -183,9 +183,9 @@ MonoBehaviour:
   rightType: 1
   bottomType: 1
   topType: 1
-  atlasName: EmptyAtlas
-  mAtlas: {fileID: 0}
-  mSpriteName: public__empty
+  atlasName: atlasAllReal
+  mAtlas: {fileID: 4202052259471349902, guid: b57c03c1cde9e452c86e0b7dfe116d03, type: 3}
+  mSpriteName: public_empty
   mFillCenter: 1
   isGrayMode: 0
 --- !u!65 &2873717696384145356

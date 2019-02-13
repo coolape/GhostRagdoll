@@ -80,8 +80,8 @@ MonoBehaviour:
   bottomType: 1
   topType: 1
   atlasName: EmptyAtlas
-  mAtlas: {fileID: 0}
-  mSpriteName: public__empty
+  mAtlas: {fileID: 4039475001549686612, guid: c0a503be5cd1c4670b3396528b151988, type: 3}
+  mSpriteName: public_empty
   mFillCenter: 1
   isGrayMode: 0
 --- !u!1 &867857764221556038
@@ -293,7 +293,7 @@ MonoBehaviour:
     mParameters:
     - obj: {fileID: 0}
       field: 
-      name: 
+      name: go
     oneShot: 0
 --- !u!114 &3818951761826884696
 MonoBehaviour:
@@ -311,8 +311,8 @@ MonoBehaviour:
   trigger: 0
   volume: 1
   pitch: 1
-  soundFileName: Tap.ogg
-  soundName: Tap
+  soundFileName: 
+  soundName: 
 --- !u!114 &583521654583238184
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -362,8 +362,8 @@ MonoBehaviour:
   bottomType: 1
   topType: 1
   atlasName: EmptyAtlas
-  mAtlas: {fileID: 0}
-  mSpriteName: public__empty
+  mAtlas: {fileID: 4039475001549686612, guid: c0a503be5cd1c4670b3396528b151988, type: 3}
+  mSpriteName: public_empty
   mFillCenter: 1
   isGrayMode: 0
 --- !u!1 &1124876359039844057
@@ -437,7 +437,7 @@ MonoBehaviour:
   aspectRatio: 2
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
-  mFont: {fileID: 0}
+  mFont: {fileID: 8539023086901719059, guid: d5b0b3bad0b954b078f6bf04e8374c28, type: 3}
   mText: "\u6E38\u5BA2"
   mFontSize: 32
   mFontStyle: 0
@@ -537,7 +537,7 @@ MonoBehaviour:
   aspectRatio: 13.7125
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
-  mFont: {fileID: 0}
+  mFont: {fileID: 8539023086901719059, guid: d5b0b3bad0b954b078f6bf04e8374c28, type: 3}
   mText: "\u6E38\u5BA2\u767B\u9646"
   mFontSize: 35
   mFontStyle: 0
@@ -629,8 +629,8 @@ MonoBehaviour:
   updateAnchors: 0
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 1924
-  mHeight: 1084
+  mWidth: 1284
+  mHeight: 724
   mDepth: -1
   autoResizeBoxCollider: 1
   hideIfOffScreen: 0
@@ -668,7 +668,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1924, y: 1084, z: 0}
+  m_Size: {x: 1284, y: 724, z: 0}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2166133264411554530
 GameObject:
@@ -741,7 +741,7 @@ MonoBehaviour:
   aspectRatio: 9.475
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
-  mFont: {fileID: 0}
+  mFont: {fileID: 8539023086901719059, guid: d5b0b3bad0b954b078f6bf04e8374c28, type: 3}
   mText: "xx\u670D\u52A1\u5668"
   mFontSize: 40
   mFontStyle: 0
@@ -873,7 +873,7 @@ MonoBehaviour:
   aspectRatio: 3.3333333
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
-  mFont: {fileID: 0}
+  mFont: {fileID: 8539023086901719059, guid: d5b0b3bad0b954b078f6bf04e8374c28, type: 3}
   mText: "\u70B9\u51FB\u5F00\u59CB"
   mFontSize: 60
   mFontStyle: 3
@@ -983,7 +983,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3289861420914852289}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -540, z: 0}
+  m_LocalPosition: {x: 0, y: -360, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8780242907000930042}
@@ -1088,7 +1088,7 @@ MonoBehaviour:
     mParameters:
     - obj: {fileID: 0}
       field: 
-      name: 
+      name: go
     oneShot: 0
 --- !u!114 &5344844877058926708
 MonoBehaviour:
@@ -1106,8 +1106,8 @@ MonoBehaviour:
   trigger: 0
   volume: 1
   pitch: 1
-  soundFileName: Tap.ogg
-  soundName: Tap
+  soundFileName: 
+  soundName: 
 --- !u!114 &1679444552441635197
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1157,8 +1157,8 @@ MonoBehaviour:
   bottomType: 1
   topType: 1
   atlasName: EmptyAtlas
-  mAtlas: {fileID: 0}
-  mSpriteName: public__empty
+  mAtlas: {fileID: 4039475001549686612, guid: c0a503be5cd1c4670b3396528b151988, type: 3}
+  mSpriteName: public_empty
   mFillCenter: 1
   isGrayMode: 0
 --- !u!1 &3810532394564128170
@@ -1233,7 +1233,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 1
   renderQueue: 0
-  startingRenderQueue: 3001
+  startingRenderQueue: 3002
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 0
@@ -1338,7 +1338,7 @@ MonoBehaviour:
   aspectRatio: 1.9444444
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
-  mFont: {fileID: 0}
+  mFont: {fileID: 8539023086901719059, guid: d5b0b3bad0b954b078f6bf04e8374c28, type: 3}
   mText: "\u7E41\u5FD9"
   mFontSize: 35
   mFontStyle: 0
@@ -1447,7 +1447,7 @@ MonoBehaviour:
     mParameters:
     - obj: {fileID: 0}
       field: 
-      name: 
+      name: go
     oneShot: 0
 --- !u!114 &1080565212944580502
 MonoBehaviour:
@@ -1465,8 +1465,8 @@ MonoBehaviour:
   trigger: 0
   volume: 1
   pitch: 1
-  soundFileName: Tap.ogg
-  soundName: Tap
+  soundFileName: 
+  soundName: 
 --- !u!114 &2499362213539251789
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1516,7 +1516,7 @@ MonoBehaviour:
   bottomType: 1
   topType: 1
   atlasName: EmptyAtlas
-  mAtlas: {fileID: 0}
-  mSpriteName: public__empty
+  mAtlas: {fileID: 4039475001549686612, guid: c0a503be5cd1c4670b3396528b151988, type: 3}
+  mSpriteName: public_empty
   mFillCenter: 1
   isGrayMode: 0
