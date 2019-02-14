@@ -34,7 +34,7 @@ end
 
 function GrPSceneManager.cleanScene()
     if MyCfg.mode == GameMode.game then
-        GrPSceneManager.loadGame()
+        GrGame.clean()
     end
 end
 
