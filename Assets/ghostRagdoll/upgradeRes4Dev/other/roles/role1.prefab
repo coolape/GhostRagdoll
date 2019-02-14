@@ -1050,6 +1050,7 @@ GameObject:
   - component: {fileID: 8344033589779436974}
   - component: {fileID: 2057876183328842875}
   - component: {fileID: 3717153735076747263}
+  - component: {fileID: 8611211534470348136}
   m_Layer: 0
   m_Name: role1
   m_TagString: Untagged
@@ -1193,6 +1194,33 @@ MonoBehaviour:
   isDonnotResetAssets: 0
   isSkipModel: 1
   onFinshLoad: []
+--- !u!114 &8611211534470348136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6970333629974314510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee9cfcf8ccbee41d98359908115364d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPause: 0
+  luaPath: 
+  instanceID: 0
+  type: 0
+  id: 0
+  mTarget: {fileID: 0}
+  mAttacker: {fileID: 0}
+  isDead: 0
+  hudAnchor: {fileID: 0}
+  state: 0
+  isOffense: 0
+  isCopyBody: 0
+  size: {x: 1, y: 1, z: 1}
+  mbody: {fileID: 0}
+  RandomFactor: 0
 --- !u!1 &7130366000277921271
 GameObject:
   m_ObjectHideFlags: 0

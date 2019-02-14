@@ -35,6 +35,7 @@ function GrGame.loadRole(name, pos, orgs, callback)
                 GrGame.player.transform.localScale = Vector3.one
                 GrGame.player.transform.localPosition = pos
                 SetActive(GrGame.player.gameObject, true)
+                Utl.doCallback(callback, orgs)
             end)
 end
 
