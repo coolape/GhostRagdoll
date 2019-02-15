@@ -30,7 +30,7 @@ function GrPGame.refresh()
 end
 
 function GrPGame.onPressJoy(isPressed)
-    printe(isPressed)
+    GrGame.onPressJoy(isPressed)
 end
 
 function GrPGame.onClickJoy()
@@ -38,7 +38,7 @@ function GrPGame.onClickJoy()
 end
 
 function GrPGame.onDragJoy(dragDetla)
-    printe(dragDetla)
+    GrGame.onDragJoy(dragDetla)
 end
 
 -- 关闭页面
