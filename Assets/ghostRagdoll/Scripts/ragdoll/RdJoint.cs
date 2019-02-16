@@ -61,7 +61,14 @@ public class RdJoint : MonoBehaviour
     bool playSpring = false;
     int flag = 1;
 
-    public void spring(float spring, float fromVal, float targetVal, float speed,
+    public void spring(float springVal, float targetVal, float speed,
+     AnimationCurve curve, float limitMin, float limitMax, bool isLoop, object finishCallback)
+    {
+        jspring = joint.spring;
+        spring(springVal, jspring.targetPosition, targetVal, speed,
+     curve, limitMin, limitMax, isLoop, finishCallback);
+    }
+        public void spring(float springVal, float fromVal, float targetVal, float speed,
      AnimationCurve curve, float limitMin, float limitMax, bool isLoop, object finishCallback)
     {
         joint.useSpring = true;
@@ -79,7 +86,7 @@ public class RdJoint : MonoBehaviour
         flag = 1;
         time = 0;
         jspring = joint.spring;
-        jspring.spring = spring;
+        jspring.spring = springVal;
         playSpring = true;
     }
 

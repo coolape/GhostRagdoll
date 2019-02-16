@@ -1163,7 +1163,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  speed: 3
+  speed: 5
   root: {fileID: 0}
   head: {fileID: 0}
   spine: {fileID: 0}

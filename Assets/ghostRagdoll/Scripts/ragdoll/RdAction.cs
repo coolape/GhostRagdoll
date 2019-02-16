@@ -25,7 +25,37 @@ public class RdAction : MonoBehaviour
 
     private void Start()
     {
+    }
+
+    public void setAction(string actionNname)
+    {
+        switch(actionNname)
+        {
+            case "walk":
+                walk();
+                break;
+            case "run":
+                break;
+            case "idel":
+                idel();
+                break;
+        }
+    }
+
+    public void idel()
+    {
+        leftThigh.spring(600, 0, speed, curve, -60, 90, false, null);
+        rightThigh.spring(600,  0, speed, curve, -60, 90, false, null);
+    }
+
+    public void walk()
+    {
         rightFinish(null);
+    }
+
+    public void run()
+    {
+
     }
 
     void leftFinish(params object[] obgs)

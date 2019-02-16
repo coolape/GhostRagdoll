@@ -4,6 +4,7 @@ GrGame = {}
 local csSelf = nil
 local transform = nil
 local isInited = false
+local smoothFollow
 GrGame.player = nil
 GrGame.isPaused = false
 
@@ -17,7 +18,8 @@ function GrGame.init(data, callback)
                     role.luaTable = GrRolebase.new()
                 end
                 GrGame.player = role.luaTable
-                GrGame.player:init(0, 0, 1, true, {})
+                GrGame.player:init(role, {})
+                smoothFollow.target = GrGame.player.transform
                 Utl.doCallback(callback)
             end)
 end
@@ -33,8 +35,11 @@ function GrGame._init()
     transform.parent = MyMain.self.transform
     transform.localPosition = Vector3.zero
     transform.localScale = Vector3.one
+    smoothFollow = MyCfg.self.mainCamera:GetComponent("CLSmoothFollow")
     csSelf.luaTable = GrGame
     csSelf:initLuaFunc()
+
+
 end
 
 function GrGame.loadRole(name, pos, callback)
@@ -58,14 +63,15 @@ end
 
 function GrGame.onPressJoy(isPressed)
     if isPressed then
-
+        GrGame.player:setAction("walk")
     else
-        if (SCfg.self.player.roleAction.currActionValue == LuaUtl.getAction("run")) then
-            SCfg.self.player:_setAction("idel");
-        end
-        SCfg.self.player.tween:stopMoveForward();
-        SCfg.self.player.aiPath:stopPathFinding();
-        SCfg.self.player:onArrive(nil);
+        GrGame.player:setAction("idel")
+        --if (SCfg.self.player.roleAction.currActionValue == LuaUtl.getAction("run")) then
+        --    SCfg.self.player:_setAction("idel");
+        --end
+        --SCfg.self.player.tween:stopMoveForward();
+        --SCfg.self.player.aiPath:stopPathFinding();
+        GrGame.player:onArrive()
     end
 end
 
@@ -75,8 +81,9 @@ function GrGame.onDragJoy(dragDetla)
     end
     local dir = dragDetla
     dir = Vector3(dir.x, 0, dir.y)
-    if GrGame.player.gameObject.activeSelf then
-        GrGame.player.luaTable.moveForward(dir)
+    if GrGame.player.gameObject.activeInHierarchy then
+        Utl.RotateTowards(GrGame.player.transform, dir)
+        --GrGame.player:moveForward(dir)
     end
 end
 
