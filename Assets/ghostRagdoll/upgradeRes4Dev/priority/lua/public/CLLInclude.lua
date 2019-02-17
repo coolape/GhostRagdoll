@@ -354,6 +354,22 @@ do
         dizzy = 7,
     }
 
+    JoinSpringMode = {
+        once = "once",
+        loop = "loop",
+        pingpong = "pingpong",
+    }
+
+    JoinSpringKeys = {
+        spring = "spring",
+        from = "from",
+        to = "to",
+        speed = "speed",
+        curve = "curve",
+        mode = "mode",
+        times = "times",
+    }
+
     -------------------------------------------------------
     local chnCfg -- 安装包配置
     function getChlCfg()

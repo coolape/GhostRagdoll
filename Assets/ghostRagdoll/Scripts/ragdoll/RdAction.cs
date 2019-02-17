@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Coolape;
+using XLua;
 
-public class RdAction : MonoBehaviour
+public class RdAction : CLBaseLua
 {
     public AnimationCurve curve;
     public AnimationCurve curve2;
@@ -26,6 +27,15 @@ public class RdAction : MonoBehaviour
     private void Start()
     {
     }
+
+    public void init()
+    {
+        if(luaTable == null)
+        {
+            setLua();
+        }
+    }
+
 
     public void setAction(string actionNname)
     {
