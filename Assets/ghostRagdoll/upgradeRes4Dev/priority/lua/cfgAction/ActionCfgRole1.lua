@@ -4,7 +4,7 @@
             [JoinSpringKeys.spring] = 600,
             [JoinSpringKeys.from] = -30,
             [JoinSpringKeys.to] = 20,
-            [JoinSpringKeys.speed] = 5,
+            [JoinSpringKeys.speed] = 2,
             [JoinSpringKeys.curve] = 0,
             [JoinSpringKeys.mode] = JoinSpringMode.once,
             [JoinSpringKeys.times] = 0,

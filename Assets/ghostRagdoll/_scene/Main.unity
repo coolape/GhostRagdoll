@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657934, g: 0.4964136, b: 0.5748189, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1220,7 +1220,7 @@ MonoBehaviour:
   atlasAllRealName: atlasAllReal
   emptFont: {fileID: 8539023086901719059, guid: d5b0b3bad0b954b078f6bf04e8374c28,
     type: 3}
-  emptAtlas: {fileID: 33, guid: c0a503be5cd1c4670b3396528b151988, type: 3}
+  emptAtlas: {fileID: 13, guid: c0a503be5cd1c4670b3396528b151988, type: 3}
   uiPublicRoot: {fileID: 657962862}
 --- !u!114 &657962864
 MonoBehaviour:

@@ -42,7 +42,6 @@ GameObject:
   - component: {fileID: 5508991280704648482}
   - component: {fileID: 6904605704253333953}
   - component: {fileID: 2194870342772195067}
-  - component: {fileID: 7734629221620523278}
   m_Layer: 0
   m_Name: Bip001 Spine
   m_TagString: Untagged
@@ -131,20 +130,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.43457597, y: 0.59165144, z: 0.6540117}
   m_Center: {x: -0.18271223, y: -0.008589434, z: -0.0022734196}
---- !u!136 &7734629221620523278
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1224013492913018634}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.017913327
-  m_Height: 2.1864517
-  m_Direction: 0
-  m_Center: {x: 1.5192217, y: 0.0000000050723807, z: -0.000000017198035}
 --- !u!1 &1684954283375708149
 GameObject:
   m_ObjectHideFlags: 0
@@ -1051,6 +1036,7 @@ GameObject:
   - component: {fileID: 2057876183328842875}
   - component: {fileID: 3717153735076747263}
   - component: {fileID: 8611211534470348136}
+  - component: {fileID: 5277083361793856181}
   m_Layer: 0
   m_Name: role1
   m_TagString: Untagged
@@ -1116,7 +1102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPause: 0
-  luaPath: 
+  luaPath: ghostRagdoll/upgradeRes/priority/lua/role/GrRoleAction.lua
   curves:
   - serializedVersion: 2
     m_Curve:
@@ -1199,6 +1185,20 @@ MonoBehaviour:
   size: {x: 1, y: 1, z: 1}
   mbody: {fileID: 0}
   RandomFactor: 0
+--- !u!136 &5277083361793856181
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6970333629974314510}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.08217994
+  m_Height: 2.0059671
+  m_Direction: 1
+  m_Center: {x: -0.0025124773, y: 1.1121011, z: 0}
 --- !u!1 &7130366000277921271
 GameObject:
   m_ObjectHideFlags: 0

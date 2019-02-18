@@ -44,8 +44,8 @@ function GrRoleAction.idel()
     local cfg = actionCfg.idel[JoinName.thigh]
     local speed = cfg[JoinSpringKeys.speed]
     local curve = csSelf.curves[cfg[JoinSpringKeys.curve]]
-    local min = csSelf[cfg[JoinSpringKeys.min]]
-    local max = csSelf[cfg[JoinSpringKeys.max]]
+    local min = cfg[JoinSpringKeys.min]
+    local max = cfg[JoinSpringKeys.max]
     local mode = cfg[JoinSpringKeys.mode]
     local times = cfg[JoinSpringKeys.times]
     local spring = cfg[JoinSpringKeys.spring]
@@ -58,8 +58,8 @@ function GrRoleAction.run()
     local cfg = actionCfg.run[JoinName.thigh]
     local speed = cfg[JoinSpringKeys.speed]
     local curve = csSelf.curves[cfg[JoinSpringKeys.curve]]
-    local min = csSelf[cfg[JoinSpringKeys.min]]
-    local max = csSelf[cfg[JoinSpringKeys.max]]
+    local min = cfg[JoinSpringKeys.min]
+    local max = cfg[JoinSpringKeys.max]
     local mode = cfg[JoinSpringKeys.mode]
     local times = cfg[JoinSpringKeys.times]
     local spring = cfg[JoinSpringKeys.spring]
@@ -77,8 +77,8 @@ function GrRoleAction.walkleftFinish(reverse)
     local cfg = actionCfg.walk[JoinName.thigh]
     local speed = cfg[JoinSpringKeys.speed]
     local curve = csSelf.curves[cfg[JoinSpringKeys.curve]]
-    local min = csSelf[cfg[JoinSpringKeys.min]]
-    local max = csSelf[cfg[JoinSpringKeys.max]]
+    local min = cfg[JoinSpringKeys.min]
+    local max = cfg[JoinSpringKeys.max]
     local mode = cfg[JoinSpringKeys.mode]
     local times = cfg[JoinSpringKeys.times]
     local spring = cfg[JoinSpringKeys.spring]
@@ -98,8 +98,8 @@ function GrRoleAction.walkrightFinish(reverse)
     local cfg = actionCfg.walk[JoinName.thigh]
     local speed = cfg[JoinSpringKeys.speed]
     local curve = csSelf.curves[cfg[JoinSpringKeys.curve]]
-    local min = csSelf[cfg[JoinSpringKeys.min]]
-    local max = csSelf[cfg[JoinSpringKeys.max]]
+    local min = cfg[JoinSpringKeys.min]
+    local max = cfg[JoinSpringKeys.max]
     local mode = cfg[JoinSpringKeys.mode]
     local times = cfg[JoinSpringKeys.times]
     local spring = cfg[JoinSpringKeys.spring]
@@ -112,7 +112,7 @@ function GrRoleAction.walkrightFinish(reverse)
         from = cfg[JoinSpringKeys.to]
         to = cfg[JoinSpringKeys.from]
     end
-    rightThigh:spring(spring, from, to, speed, curve, min, max, mode, times, GrRoleAction.walkleftFinish, (not reverse))
+    rightThigh:spring(spring, from, to, speed, curve, min, max, mode, times, GrRoleAction.walkleftFinish, ( reverse))
 end
 --------------------------------------------
 return GrRoleAction
