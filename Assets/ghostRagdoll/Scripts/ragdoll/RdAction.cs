@@ -6,9 +6,9 @@ using XLua;
 
 public class RdAction : CLBaseLua
 {
-    public AnimationCurve curve;
-    public AnimationCurve curve2;
-    public float speed = 1;
+    public AnimationCurve[] curves;
+    //public float speed = 1;
+    public string actionCfgName = "";
 
     public Transform root;//根节点
     public RdJoint head;//头
@@ -28,30 +28,26 @@ public class RdAction : CLBaseLua
     {
     }
 
+    LuaFunction lfinit;
+    [CSharpCallLua]
+    LuaFunction lfsetAction;
     public void init()
     {
         if(luaTable == null)
         {
             setLua();
+            lfinit = getLuaFunction("init");
+            lfsetAction = getLuaFunction("setAction");
         }
+        Utl.doCallback(lfinit, this, actionCfgName);
     }
-
 
     public void setAction(string actionNname)
     {
-        switch(actionNname)
-        {
-            case "walk":
-                walk();
-                break;
-            case "run":
-                break;
-            case "idel":
-                idel();
-                break;
-        }
+        Utl.doCallback(lfsetAction, actionNname);
     }
 
+    /*
     public void idel()
     {
         leftThigh.spring(600, 0, speed, curve, -60, 90, false, null);
@@ -101,6 +97,7 @@ public class RdAction : CLBaseLua
         }
         rightThigh.spring(600, from, to, speed, curve2, -60, 90, false, (Callback)leftFinish);
     }
+    */
 
     // Update is called once per frame
     /*

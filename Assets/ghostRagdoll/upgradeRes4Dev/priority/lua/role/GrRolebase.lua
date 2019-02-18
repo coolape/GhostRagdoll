@@ -15,6 +15,7 @@ function GrRolebase:_init(csSelf)
     self.gameObject = csSelf.gameObject
     self.transform = csSelf.transform
     self.action = csSelf:GetComponent("RdAction")
+    self.action:init()
 end
 
 function GrRolebase:init(csSelf, param)

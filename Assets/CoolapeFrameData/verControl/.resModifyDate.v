@@ -14,7 +14,7 @@
 /Users/chenbin/Documents/working/projects/GhostRagdoll/Assets/ghostRagdoll/upgradeRes4Dev/other/model/role1.meta,131945877350000000
 /Users/chenbin/Documents/working/projects/GhostRagdoll/Assets/ghostRagdoll/upgradeRes4Dev/other/model/role1/role1.FBX,131926003010000000
 /Users/chenbin/Documents/working/projects/GhostRagdoll/Assets/ghostRagdoll/upgradeRes4Dev/other/model/role1/role1.FBX.meta,131945877350000000
-/Users/chenbin/Documents/working/projects/GhostRagdoll/Assets/ghostRagdoll/upgradeRes4Dev/other/roles/role1.prefab,131947813980000000
+/Users/chenbin/Documents/working/projects/GhostRagdoll/Assets/ghostRagdoll/upgradeRes4Dev/other/roles/role1.prefab,131949588780000000
 /Users/chenbin/Documents/working/projects/GhostRagdoll/Assets/ghostRagdoll/upgradeRes4Dev/other/roles/role1.prefab.meta,131945871980000000
 /Users/chenbin/Documents/working/projects/GhostRagdoll/Assets/ghostRagdoll/upgradeRes4Dev/other/uiAtlas/public.meta,131919053800000000
 /Users/chenbin/Documents/working/projects/GhostRagdoll/Assets/ghostRagdoll/upgradeRes4Dev/other/uiAtlas/public/anniuyuandikuang.png,131060251860000000
@@ -40,6 +40,7 @@
 /Users/chenbin/Documents/working/projects/GhostRagdoll/Assets/ghostRagdoll/upgradeRes4Dev/priority/lua/CLLMainLua.lua.meta,131919053800000000
 /Users/chenbin/Documents/working/projects/GhostRagdoll/Assets/ghostRagdoll/upgradeRes4Dev/priority/lua/bio.meta,131919053800000000
 /Users/chenbin/Documents/working/projects/GhostRagdoll/Assets/ghostRagdoll/upgradeRes4Dev/priority/lua/cfg.meta,131919053800000000
+/Users/chenbin/Documents/working/projects/GhostRagdoll/Assets/ghostRagdoll/upgradeRes4Dev/priority/lua/cfgAction.meta,131949330790000000
 /Users/chenbin/Documents/working/projects/GhostRagdoll/Assets/ghostRagdoll/upgradeRes4Dev/priority/lua/game.meta,131945837510000000
 /Users/chenbin/Documents/working/projects/GhostRagdoll/Assets/ghostRagdoll/upgradeRes4Dev/priority/lua/json.meta,131919053800000000
 /Users/chenbin/Documents/working/projects/GhostRagdoll/Assets/ghostRagdoll/upgradeRes4Dev/priority/lua/net.meta,131919053800000000
@@ -59,6 +60,8 @@
 /Users/chenbin/Documents/working/projects/GhostRagdoll/Assets/ghostRagdoll/upgradeRes4Dev/priority/lua/cfg/DBCfg.lua.meta,131919053800000000
 /Users/chenbin/Documents/working/projects/GhostRagdoll/Assets/ghostRagdoll/upgradeRes4Dev/priority/lua/cfg/DBCfgTool.lua,131919053800000000
 /Users/chenbin/Documents/working/projects/GhostRagdoll/Assets/ghostRagdoll/upgradeRes4Dev/priority/lua/cfg/DBCfgTool.lua.meta,131919053800000000
+/Users/chenbin/Documents/working/projects/GhostRagdoll/Assets/ghostRagdoll/upgradeRes4Dev/priority/lua/cfgAction/ActionCfgRole1.lua,131949583700000000
+/Users/chenbin/Documents/working/projects/GhostRagdoll/Assets/ghostRagdoll/upgradeRes4Dev/priority/lua/cfgAction/ActionCfgRole1.lua.meta,131949330790000000
 /Users/chenbin/Documents/working/projects/GhostRagdoll/Assets/ghostRagdoll/upgradeRes4Dev/priority/lua/game/GrGame.lua,131947796840000000
 /Users/chenbin/Documents/working/projects/GhostRagdoll/Assets/ghostRagdoll/upgradeRes4Dev/priority/lua/game/GrGame.lua.meta,131945837510000000
 /Users/chenbin/Documents/working/projects/GhostRagdoll/Assets/ghostRagdoll/upgradeRes4Dev/priority/lua/json/json.lua,131919053800000000
@@ -71,7 +74,7 @@
 /Users/chenbin/Documents/working/projects/GhostRagdoll/Assets/ghostRagdoll/upgradeRes4Dev/priority/lua/net/CLLNet.lua.meta,131919053800000000
 /Users/chenbin/Documents/working/projects/GhostRagdoll/Assets/ghostRagdoll/upgradeRes4Dev/priority/lua/net/NetProtoUsermgrClient.lua,131919053800000000
 /Users/chenbin/Documents/working/projects/GhostRagdoll/Assets/ghostRagdoll/upgradeRes4Dev/priority/lua/net/NetProtoUsermgrClient.lua.meta,131919053800000000
-/Users/chenbin/Documents/working/projects/GhostRagdoll/Assets/ghostRagdoll/upgradeRes4Dev/priority/lua/public/CLLInclude.lua,131945837510000000
+/Users/chenbin/Documents/working/projects/GhostRagdoll/Assets/ghostRagdoll/upgradeRes4Dev/priority/lua/public/CLLInclude.lua,131949528930000000
 /Users/chenbin/Documents/working/projects/GhostRagdoll/Assets/ghostRagdoll/upgradeRes4Dev/priority/lua/public/CLLInclude.lua.meta,131919053800000000
 /Users/chenbin/Documents/working/projects/GhostRagdoll/Assets/ghostRagdoll/upgradeRes4Dev/priority/lua/public/CLLPool.lua,131919053800000000
 /Users/chenbin/Documents/working/projects/GhostRagdoll/Assets/ghostRagdoll/upgradeRes4Dev/priority/lua/public/CLLPool.lua.meta,131919053800000000
@@ -83,7 +86,9 @@
 /Users/chenbin/Documents/working/projects/GhostRagdoll/Assets/ghostRagdoll/upgradeRes4Dev/priority/lua/public/CLLStack.lua.meta,131919053800000000
 /Users/chenbin/Documents/working/projects/GhostRagdoll/Assets/ghostRagdoll/upgradeRes4Dev/priority/lua/public/class.lua,131919053800000000
 /Users/chenbin/Documents/working/projects/GhostRagdoll/Assets/ghostRagdoll/upgradeRes4Dev/priority/lua/public/class.lua.meta,131919053800000000
-/Users/chenbin/Documents/working/projects/GhostRagdoll/Assets/ghostRagdoll/upgradeRes4Dev/priority/lua/role/GrRolebase.lua,131947787200000000
+/Users/chenbin/Documents/working/projects/GhostRagdoll/Assets/ghostRagdoll/upgradeRes4Dev/priority/lua/role/GrRoleAction.lua,131949583550000000
+/Users/chenbin/Documents/working/projects/GhostRagdoll/Assets/ghostRagdoll/upgradeRes4Dev/priority/lua/role/GrRoleAction.lua.meta,131949330790000000
+/Users/chenbin/Documents/working/projects/GhostRagdoll/Assets/ghostRagdoll/upgradeRes4Dev/priority/lua/role/GrRolebase.lua,131949458240000000
 /Users/chenbin/Documents/working/projects/GhostRagdoll/Assets/ghostRagdoll/upgradeRes4Dev/priority/lua/role/GrRolebase.lua.meta,131946905430000000
 /Users/chenbin/Documents/working/projects/GhostRagdoll/Assets/ghostRagdoll/upgradeRes4Dev/priority/lua/toolkit/CLLUpdateUpgrader.lua,131919053800000000
 /Users/chenbin/Documents/working/projects/GhostRagdoll/Assets/ghostRagdoll/upgradeRes4Dev/priority/lua/toolkit/CLLUpdateUpgrader.lua.meta,131919053800000000

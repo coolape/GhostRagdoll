@@ -360,6 +360,25 @@ do
         pingpong = "pingpong",
     }
 
+    JoinName = {
+        head = "head", --头
+        spine = "spine", --脊柱
+        leftUpperArm = "leftUpperArm", -- //左上臂
+        rightUpperArm = "rightUpperArm", --//右上臂
+        upperArm = "upperArm", --//上臂
+        leftForeArm = "leftForeArm", --//左前臂
+        rightForeArm = "rightForeArm", --//右前臂
+        foreArm = "foreArm", --//前臂
+        leftThigh = "leftThigh", -- //左大腿
+        rightThigh = "rightThigh", -- //右大腿
+        thigh = "thigh", -- //大腿
+        leftCalf = "leftCalf", --//左小腿
+        rightCalf = "rightThigh", --//右小腿
+        calf = "calf", --//小腿
+        leftFoot = "leftFoot", --//左脚
+        rightFoot = "rightFoot", --;//右脚
+        foot = "foot", --脚
+    }
     JoinSpringKeys = {
         spring = "spring",
         from = "from",
@@ -368,6 +387,8 @@ do
         curve = "curve",
         mode = "mode",
         times = "times",
+        min="min",
+        max="max",
     }
 
     -------------------------------------------------------
