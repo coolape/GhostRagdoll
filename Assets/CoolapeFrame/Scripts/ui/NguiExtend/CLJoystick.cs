@@ -49,8 +49,9 @@ namespace Coolape
 		}
 
 		public void init(object onPress, object onClick, object onDrag)
-		{
-			onPressCallback = onPress;
+        {
+            mainCamera = MyMainCamera.current;
+            onPressCallback = onPress;
 			onDragCallback = onDrag;
 			onClickCallback = onClick;
 			Start();
@@ -62,8 +63,6 @@ namespace Coolape
 
 		void OnClick()
 		{
-
-			mainCamera = MyMainCamera.current;
 			mainCamera.enabled = true;
 			mainCamera.Update();
 			mainCamera.LateUpdate();

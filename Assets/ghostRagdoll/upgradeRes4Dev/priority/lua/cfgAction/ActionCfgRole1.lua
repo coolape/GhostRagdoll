@@ -2,7 +2,7 @@
     walk = {
         [JoinName.thigh] = {
             [JoinSpringKeys.spring] = 600,
-            [JoinSpringKeys.from] = -30,
+            [JoinSpringKeys.from] = -40,
             [JoinSpringKeys.to] = 20,
             [JoinSpringKeys.speed] = 2,
             [JoinSpringKeys.curve] = 0,
@@ -18,7 +18,7 @@
             [JoinSpringKeys.spring] = 600,
             [JoinSpringKeys.from] = -60,
             [JoinSpringKeys.to] = 60,
-            [JoinSpringKeys.speed] = 5,
+            [JoinSpringKeys.speed] = 4,
             [JoinSpringKeys.curve] = 0,
             [JoinSpringKeys.mode] = JoinSpringMode.pingpong,
             [JoinSpringKeys.times] = 0,

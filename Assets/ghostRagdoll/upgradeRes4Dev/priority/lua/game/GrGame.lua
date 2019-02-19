@@ -63,7 +63,7 @@ end
 
 function GrGame.onPressJoy(isPressed)
     if isPressed then
-        GrGame.player:setAction("run")
+        GrGame.player:setAction("walk")
     else
         GrGame.player:setAction("idel")
         --if (SCfg.self.player.roleAction.currActionValue == LuaUtl.getAction("run")) then

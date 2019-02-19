@@ -1019,7 +1019,7 @@ public class ECLProjectManager : EditorWindow
 			           path.Contains ("/priority/ui/other/")) {
 				// refresh ui cell
 				if (lastPriorityVer == null || lastPriorityVer [path] == null || lastPriorityVer [path].ToString () != md5str) {
-					GameObject t = (GameObject)(AssetDatabase.LoadAssetAtPath ("Assets/" + path, typeof(GameObject)));
+					GameObject t = PrefabUtility.LoadPrefabContents("Assets/" + path);
 					CLCellLua uicell = t.GetComponent<CLCellLua> ();
 					resultPstr.a (path).a ("\n");
 
@@ -1030,7 +1030,7 @@ public class ECLProjectManager : EditorWindow
 			} else if (path.Contains ("/priority/ui/panel/")) {
 				// refresh panel
 				if (lastPriorityVer == null || lastPriorityVer [path] == null || lastPriorityVer [path].ToString () != md5str) {
-					GameObject t = (GameObject)(AssetDatabase.LoadAssetAtPath ("Assets/" + path, typeof(GameObject)));
+					GameObject t = PrefabUtility.LoadPrefabContents("Assets/" + path);
 					CLPanelBase panel = t.GetComponent<CLPanelBase> ();
 					if (panel != null) {
 						resultPstr.a (path).a ("\n");
