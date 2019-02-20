@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657934, g: 0.4964136, b: 0.5748189, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -222,7 +222,7 @@ MonoBehaviour:
   bottomType: 1
   topType: 1
   atlasName: atlasAllReal
-  mAtlas: {fileID: 14, guid: b57c03c1cde9e452c86e0b7dfe116d03, type: 3}
+  mAtlas: {fileID: 3904721936147909435, guid: 38f8ffafc3e0d49c1ba93b85aed24fbf, type: 3}
   mSpriteName: public_empty
   mFillCenter: 1
   isGrayMode: 0
@@ -867,7 +867,7 @@ MonoBehaviour:
   bottomType: 1
   topType: 1
   atlasName: atlasAllReal
-  mAtlas: {fileID: 14, guid: b57c03c1cde9e452c86e0b7dfe116d03, type: 3}
+  mAtlas: {fileID: 3904721936147909435, guid: 38f8ffafc3e0d49c1ba93b85aed24fbf, type: 3}
   mSpriteName: public_empty
   mFillCenter: 1
   isGrayMode: 0
@@ -1259,7 +1259,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 1
   renderQueue: 0
-  startingRenderQueue: 3000
+  startingRenderQueue: 3001
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 0
@@ -3198,7 +3198,7 @@ MonoBehaviour:
   bottomType: 1
   topType: 1
   atlasName: atlasAllReal
-  mAtlas: {fileID: 14, guid: b57c03c1cde9e452c86e0b7dfe116d03, type: 3}
+  mAtlas: {fileID: 3904721936147909435, guid: 38f8ffafc3e0d49c1ba93b85aed24fbf, type: 3}
   mSpriteName: public_empty
   mFillCenter: 1
   isGrayMode: 0

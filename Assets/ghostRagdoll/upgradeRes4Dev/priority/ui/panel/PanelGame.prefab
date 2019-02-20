@@ -80,10 +80,142 @@ MonoBehaviour:
   bottomType: 1
   topType: 1
   atlasName: atlasAllReal
-  mAtlas: {fileID: 4202052259471349902, guid: b57c03c1cde9e452c86e0b7dfe116d03, type: 3}
+  mAtlas: {fileID: 3904721936147909435, guid: 38f8ffafc3e0d49c1ba93b85aed24fbf, type: 3}
   mSpriteName: public_sanjiao
   mFillCenter: 1
   isGrayMode: 0
+--- !u!1 &550863729527548641
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9192081960310827933}
+  - component: {fileID: 8785844222402567931}
+  - component: {fileID: 3208365278563636978}
+  - component: {fileID: 4626809878556769909}
+  m_Layer: 5
+  m_Name: ButtonAttach
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9192081960310827933
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 550863729527548641}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -150, y: 150, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1000570070334297074}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8785844222402567931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 550863729527548641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b3dc54f924693f41b5cbecb267e647a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftAnchor:
+    target: {fileID: 0}
+    relative: 0
+    absolute: 0
+  rightAnchor:
+    target: {fileID: 0}
+    relative: 1
+    absolute: 0
+  bottomAnchor:
+    target: {fileID: 0}
+    relative: 0
+    absolute: 0
+  topAnchor:
+    target: {fileID: 0}
+    relative: 1
+    absolute: 0
+  updateAnchors: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
+  mPivot: 4
+  mWidth: 100
+  mHeight: 100
+  mDepth: 0
+  autoResizeBoxCollider: 1
+  hideIfOffScreen: 0
+  keepAspectRatio: 0
+  aspectRatio: 1
+  mType: 0
+  mFillDirection: 4
+  mFillAmount: 1
+  mInvert: 0
+  mFlip: 0
+  centerType: 1
+  leftType: 1
+  rightType: 1
+  bottomType: 1
+  topType: 1
+  atlasName: atlasAllReal
+  mAtlas: {fileID: 3904721936147909435, guid: 38f8ffafc3e0d49c1ba93b85aed24fbf, type: 3}
+  mSpriteName: public_anniuyuandikuang
+  mFillCenter: 1
+  isGrayMode: 0
+--- !u!65 &3208365278563636978
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 550863729527548641}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 100, y: 100, z: 0}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4626809878556769909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 550863729527548641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fdca5042b1d12a4890ec1bd4f04290d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tweenTarget: {fileID: 550863729527548641}
+  hover: {r: 0.88235295, g: 0.78431374, b: 0.5882353, a: 1}
+  pressed: {r: 0.7176471, g: 0.6392157, b: 0.48235294, a: 1}
+  disabledColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  duration: 0.2
+  dragHighlight: 0
+  hoverSprite: 
+  pressedSprite: 
+  disabledSprite: 
+  hoverSprite2D: {fileID: 0}
+  pressedSprite2D: {fileID: 0}
+  disabledSprite2D: {fileID: 0}
+  pixelSnap: 0
+  onClick:
+  - mTarget: {fileID: 5438515042974266976}
+    mMethodName: uiEventDelegate
+    mParameters:
+    - obj: {fileID: 0}
+      field: 
+      name: go
+    oneShot: 0
 --- !u!1 &1994191024982579689
 GameObject:
   m_ObjectHideFlags: 0
@@ -171,7 +303,7 @@ MonoBehaviour:
   bottomType: 1
   topType: 1
   atlasName: atlasAllReal
-  mAtlas: {fileID: 4202052259471349902, guid: b57c03c1cde9e452c86e0b7dfe116d03, type: 3}
+  mAtlas: {fileID: 3904721936147909435, guid: 38f8ffafc3e0d49c1ba93b85aed24fbf, type: 3}
   mSpriteName: public_huixiaohuobairenwukuang
   mFillCenter: 1
   isGrayMode: 0
@@ -282,7 +414,7 @@ MonoBehaviour:
   bottomType: 1
   topType: 1
   atlasName: atlasAllReal
-  mAtlas: {fileID: 4202052259471349902, guid: b57c03c1cde9e452c86e0b7dfe116d03, type: 3}
+  mAtlas: {fileID: 3904721936147909435, guid: 38f8ffafc3e0d49c1ba93b85aed24fbf, type: 3}
   mSpriteName: public_sanjiao
   mFillCenter: 1
   isGrayMode: 0
@@ -297,7 +429,7 @@ GameObject:
   - component: {fileID: 6602832581068525105}
   - component: {fileID: 5910791119302605543}
   m_Layer: 5
-  m_Name: bottomRight
+  m_Name: bottomLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -417,10 +549,61 @@ MonoBehaviour:
   bottomType: 1
   topType: 1
   atlasName: atlasAllReal
-  mAtlas: {fileID: 4202052259471349902, guid: b57c03c1cde9e452c86e0b7dfe116d03, type: 3}
+  mAtlas: {fileID: 3904721936147909435, guid: 38f8ffafc3e0d49c1ba93b85aed24fbf, type: 3}
   mSpriteName: public_anniuyuandikuang
   mFillCenter: 1
   isGrayMode: 0
+--- !u!1 &4597046133454610216
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1000570070334297074}
+  - component: {fileID: 2263852798111568570}
+  m_Layer: 5
+  m_Name: bottomRight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1000570070334297074
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4597046133454610216}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 640, y: -360, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 9192081960310827933}
+  m_Father: {fileID: 4221872339932442545}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2263852798111568570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4597046133454610216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8077b76001d36d489868d20d28bddb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uiCamera: {fileID: 0}
+  container: {fileID: 0}
+  side: 6
+  runOnlyOnce: 1
+  relativeOffset: {x: 0, y: 0}
+  pixelOffset: {x: 0, y: 0}
+  widgetContainer: {fileID: 0}
 --- !u!1 &4890409254069415111
 GameObject:
   m_ObjectHideFlags: 0
@@ -501,7 +684,7 @@ MonoBehaviour:
   bottomType: 1
   topType: 1
   atlasName: atlasAllReal
-  mAtlas: {fileID: 4202052259471349902, guid: b57c03c1cde9e452c86e0b7dfe116d03, type: 3}
+  mAtlas: {fileID: 3904721936147909435, guid: 38f8ffafc3e0d49c1ba93b85aed24fbf, type: 3}
   mSpriteName: public_sanjiao
   mFillCenter: 1
   isGrayMode: 0
@@ -535,6 +718,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6602832581068525105}
+  - {fileID: 1000570070334297074}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -688,7 +872,7 @@ MonoBehaviour:
   bottomType: 1
   topType: 1
   atlasName: atlasAllReal
-  mAtlas: {fileID: 4202052259471349902, guid: b57c03c1cde9e452c86e0b7dfe116d03, type: 3}
+  mAtlas: {fileID: 3904721936147909435, guid: 38f8ffafc3e0d49c1ba93b85aed24fbf, type: 3}
   mSpriteName: public_sanjiao
   mFillCenter: 1
   isGrayMode: 0

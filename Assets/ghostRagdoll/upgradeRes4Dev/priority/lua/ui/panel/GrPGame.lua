@@ -59,11 +59,9 @@ end
 -- 处理ui上的事件，例如点击等
 function GrPGame.uiEventDelegate(go)
     local goName = go.name;
-    --[[
-    if(goName == "xxx") then
-      --TODO:
+    if goName == "ButtonAttach" then
+        
     end
-    --]]
 end
 
 -- 当按了返回键时，关闭自己（返值为true时关闭）

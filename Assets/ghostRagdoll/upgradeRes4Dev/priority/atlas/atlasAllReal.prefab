@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3
+--- !u!1 &709472704651095069
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,8 +8,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4}
-  - component: {fileID: 5}
+  - component: {fileID: 7078734455799332324}
+  - component: {fileID: 3904721936147909435}
   m_Layer: 0
   m_Name: atlasAllReal
   m_TagString: Untagged
@@ -17,27 +17,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4
+--- !u!4 &7078734455799332324
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3}
+  m_GameObject: {fileID: 709472704651095069}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -136.7276, y: -3.359375, z: -10.717582}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5
+--- !u!114 &3904721936147909435
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3}
+  m_GameObject: {fileID: 709472704651095069}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4d0c51bb0b6e93049af5e88f93826e3b, type: 3}
@@ -45,20 +45,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   mSprites:
-  - name: public_sanjiao
-    x: 0
-    y: 0
-    width: 29
-    height: 43
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-    path: ghostRagdoll/upgradeRes4Dev/other/uiAtlas/public/sanjiao.png
   - name: public_huixiaohuobairenwukuang
     x: 0
     y: 0
@@ -92,15 +78,29 @@ MonoBehaviour:
     y: 0
     width: 4
     height: 4
-    borderLeft: 1
-    borderRight: 1
-    borderTop: 1
-    borderBottom: 1
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 1
+    paddingRight: 1
+    paddingTop: 1
+    paddingBottom: 1
+    path: ghostRagdoll/upgradeRes4Dev/other/uiAtlas/public/empty.png
+  - name: public_sanjiao
+    x: 0
+    y: 0
+    width: 29
+    height: 43
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
     paddingLeft: 0
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
-    path: ghostRagdoll/upgradeRes4Dev/other/uiAtlas/public/empty.png
+    path: ghostRagdoll/upgradeRes4Dev/other/uiAtlas/public/sanjiao.png
   mPixelSize: 1
   mReplacement: {fileID: 0}
   mCoordinates: 0
