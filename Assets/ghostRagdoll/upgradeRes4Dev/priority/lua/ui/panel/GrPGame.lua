@@ -12,7 +12,7 @@ function GrPGame.init(csObj)
     --[[
     上的组件：getChild(transform, "offset", "Progress BarHong"):GetComponent("UISlider");
     --]]
-    uiobjs.Joystick = getCC(transform, "bottomRight/Joystick", "CLJoystick")
+    uiobjs.Joystick = getCC(transform, "bottomLeft/Joystick", "CLJoystick")
     uiobjs.Joystick:init(GrPGame.onPressJoy, GrPGame.onClickJoy, GrPGame.onDragJoy)
 end
 

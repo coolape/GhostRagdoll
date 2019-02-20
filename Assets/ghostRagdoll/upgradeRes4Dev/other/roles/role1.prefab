@@ -1037,6 +1037,7 @@ GameObject:
   - component: {fileID: 3717153735076747263}
   - component: {fileID: 8611211534470348136}
   - component: {fileID: 5277083361793856181}
+  - component: {fileID: 7270403485594146900}
   m_Layer: 0
   m_Name: role1
   m_TagString: Untagged
@@ -1154,9 +1155,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   materials: []
-  meshs: []
+  meshs:
+  - meshFilter: {fileID: 0}
+    skinnedMesh: {fileID: 1729350379107235460}
+    animator: {fileID: 0}
+    modelName: role1.role1
+    meshName: v_body
   isDonnotResetAssets: 0
-  isSkipModel: 1
+  isSkipModel: 0
   onFinshLoad: []
 --- !u!114 &8611211534470348136
 MonoBehaviour:
@@ -1199,6 +1205,36 @@ CapsuleCollider:
   m_Height: 2.0059671
   m_Direction: 1
   m_Center: {x: -0.0025124773, y: 1.1121011, z: 0}
+--- !u!114 &7270403485594146900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6970333629974314510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f487deb1e0ae4215b97a58363a7bb19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bonesNames: []
+  bonesList: []
+  animator: {fileID: 0}
+  bodyPartNames:
+  - body
+  bodyParts:
+  - partName: body
+    switchType: 1
+    cellNames:
+    - 1
+    - 2
+    render: {fileID: 1729350379107235460}
+    materialNames:
+    - role1.Materials.role1
+    - role1.Materials.role2
+    partObjs: []
+    needSwitchController: 0
+    animatorControllers: []
 --- !u!1 &7130366000277921271
 GameObject:
   m_ObjectHideFlags: 0

@@ -50,7 +50,6 @@ namespace Coolape
 
 		public void init(object onPress, object onClick, object onDrag)
         {
-            mainCamera = MyMainCamera.current;
             onPressCallback = onPress;
 			onDragCallback = onDrag;
 			onClickCallback = onClick;
@@ -58,11 +57,26 @@ namespace Coolape
 			OnPress(false);
 		}
 
-		//	RaycastHit lastHit;
-		MyMainCamera mainCamera;
+        //	RaycastHit lastHit;
+        MyMainCamera _mainCamera;
+        public MyMainCamera mainCamera
+        {
+            get {
+                if(_mainCamera == null)
+                {
+                    _mainCamera = MyMainCamera.current;
+                }
+                return _mainCamera;
+            }
+            set
+            {
+                _mainCamera = value;
+            }
+        }
 
-		void OnClick()
+        void OnClick()
 		{
+            if (mainCamera == null) return;
 			mainCamera.enabled = true;
 			mainCamera.Update();
 			mainCamera.LateUpdate();
