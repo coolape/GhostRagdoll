@@ -43,7 +43,15 @@ end
 
 -- 四处走走
 function GrRolebase:goAround()
-    
+    if NumEx.NextBool() then
+        self:setAction("walk")
+    else
+        self:setAction("run")
+    end
+
+    local dir = Vector3(NumEx.NextInt(-10, 10) / 10, 0, NumEx.NextInt(-10, 10) / 10)
+    Utl.RotateTowards(self.transform, dir)
+    self.csSelf:invoke4Lua(self:wrapFunction4CS(self.goAround), NumEx.NextInt(40, 100) / 10)
 end
 --------------------------------------------
 return GrRolebase

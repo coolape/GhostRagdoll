@@ -21,11 +21,12 @@ function GrGame.init(data, callback)
                         role.luaTable = GrRolebase.new()
                     end
                     role.luaTable:init(role, { isPlayer = false })
+                    role.luaTable:goAround()
                     GrGame.npcs[role.instanceID] = role.luaTable
                 end)
     end
 
-    GrGame.loadRole("role1", Vector3.zero,
+    GrGame.loadRole("role1", Vector3(5, 0, 5),
             function(role)
                 if role.luaTable == nil then
                     role.luaTable = GrRolebase.new()
