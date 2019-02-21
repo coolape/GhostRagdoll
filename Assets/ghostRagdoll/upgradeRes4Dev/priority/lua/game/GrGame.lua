@@ -15,15 +15,17 @@ function GrGame.init(data, callback)
     GrGame._init()
 
     for i = 1, 10 do
-        GrGame.loadRole("role1", Vector3.zero,
-                function(role)
-                    if role.luaTable == nil then
-                        role.luaTable = GrRolebase.new()
-                    end
-                    role.luaTable:init(role, { isPlayer = false })
-                    role.luaTable:goAround()
-                    GrGame.npcs[role.instanceID] = role.luaTable
-                end)
+        csSelf:invoke4Lua(function()
+            GrGame.loadRole("role1", Vector3.zero,
+                    function(role)
+                        if role.luaTable == nil then
+                            role.luaTable = GrRolebase.new()
+                        end
+                        role.luaTable:init(role, { isPlayer = false })
+                        role.luaTable:goAround()
+                        GrGame.npcs[role.instanceID] = role.luaTable
+                    end)
+        end, 3 * (i - 1))
     end
 
     GrGame.loadRole("role1", Vector3(5, 0, 5),

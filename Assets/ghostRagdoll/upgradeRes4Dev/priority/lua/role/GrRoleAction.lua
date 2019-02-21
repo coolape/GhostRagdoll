@@ -40,6 +40,16 @@ function GrRoleAction.setAction(actionNname)
     GrRoleAction[actionNname]();
 end
 
+function GrRoleAction.getSpeed(speed)
+    local ret = 0
+    if type(speed) == "function" then
+        ret = speed()
+    else
+        ret = speed
+    end
+    return ret
+end
+
 function GrRoleAction.idel()
     local cfg = actionCfg.idel[JoinName.thigh]
     local speed = cfg[JoinSpringKeys.speed]
@@ -50,8 +60,8 @@ function GrRoleAction.idel()
     local times = cfg[JoinSpringKeys.times]
     local spring = cfg[JoinSpringKeys.spring]
     local to = cfg[JoinSpringKeys.to]
-    leftThigh:spring(spring, to, speed, curve, min, max, mode, times, nil, nil)
-    rightThigh:spring(spring, to, speed, curve, min, max, mode, times, nil, nil)
+    leftThigh:spring(spring, to, GrRoleAction.getSpeed(speed), curve, min, max, mode, times, nil, nil)
+    rightThigh:spring(spring, to, GrRoleAction.getSpeed(speed), curve, min, max, mode, times, nil, nil)
 end
 
 function GrRoleAction.run()
@@ -65,8 +75,8 @@ function GrRoleAction.run()
     local spring = cfg[JoinSpringKeys.spring]
     local from = cfg[JoinSpringKeys.from]
     local to = cfg[JoinSpringKeys.to]
-    leftThigh:spring(spring, from, to, speed, curve, min, max, mode, times, nil, nil)
-    rightThigh:spring(spring, to, from, speed, curve, min, max, mode, times, nil, nil)
+    leftThigh:spring(spring, from, to, GrRoleAction.getSpeed(speed), curve, min, max, mode, times, nil, nil)
+    rightThigh:spring(spring, to, from, GrRoleAction.getSpeed(speed), curve, min, max, mode, times, nil, nil)
 end
 
 function GrRoleAction.walk()
@@ -91,7 +101,7 @@ function GrRoleAction.walkleftFinish(reverse)
         from = cfg[JoinSpringKeys.to]
         to = cfg[JoinSpringKeys.from]
     end
-    leftThigh:spring(spring, from, to, speed, curve, min, max, mode, times, GrRoleAction.walkrightFinish, (not reverse))
+    leftThigh:spring(spring, from, to, GrRoleAction.getSpeed(speed), curve, min, max, mode, times, GrRoleAction.walkrightFinish, (not reverse))
 end
 
 function GrRoleAction.walkrightFinish(reverse)
@@ -112,7 +122,7 @@ function GrRoleAction.walkrightFinish(reverse)
         from = cfg[JoinSpringKeys.to]
         to = cfg[JoinSpringKeys.from]
     end
-    rightThigh:spring(spring, from, to, speed, curve, min, max, mode, times, GrRoleAction.walkleftFinish, ( reverse))
+    rightThigh:spring(spring, from, to, GrRoleAction.getSpeed(speed), curve, min, max, mode, times, GrRoleAction.walkleftFinish, (reverse))
 end
 --------------------------------------------
 return GrRoleAction

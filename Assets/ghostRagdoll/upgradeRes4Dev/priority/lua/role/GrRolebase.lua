@@ -25,7 +25,7 @@ function GrRolebase:init(csSelf, param)
         self:dress("2")
     else
         self:dress("1")
-        GrRolebase:goAround()
+        self:goAround()
     end
 end
 
