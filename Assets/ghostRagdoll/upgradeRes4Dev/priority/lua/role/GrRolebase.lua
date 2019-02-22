@@ -15,8 +15,9 @@ function GrRolebase:_init(csSelf)
     self.gameObject = csSelf.gameObject
     self.transform = csSelf.transform
     self.action = csSelf:GetComponent("RdAction")
-    self.avata = csSelf:GetComponent("CLRoleAvata")
     self.action:init()
+    self.avata = csSelf:GetComponent("CLRoleAvata")
+    self.seeker = csSelf:GetComponent(seeker)
 end
 
 function GrRolebase:init(csSelf, param)

@@ -1038,6 +1038,7 @@ GameObject:
   - component: {fileID: 8611211534470348136}
   - component: {fileID: 5277083361793856181}
   - component: {fileID: 7270403485594146900}
+  - component: {fileID: 7096327739623617810}
   m_Layer: 0
   m_Name: role1
   m_TagString: Untagged
@@ -1235,6 +1236,43 @@ MonoBehaviour:
     partObjs: []
     needSwitchController: 0
     animatorControllers: []
+--- !u!114 &7096327739623617810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6970333629974314510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e385878028fdd4116a91661dc28a0e9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mAStarPathSearch: {fileID: 0}
+  target: {fileID: 0}
+  targetPos: {x: 0, y: 0, z: 0}
+  speed: 1
+  turningSpeed: 5
+  endReachedDistance: 0.2
+  canSearchPath: 1
+  canMove: 0
+  autoMoveOnFinishSeek: 0
+  movingBy: 0
+  unscaledTime: 0
+  showPath: 1
+  isSeekTargetLoop: 0
+  seekTargetLoopIntvalSec: 1
+  nextSeekTargetTime: 0
+  obstructMask:
+    serializedVersion: 2
+    m_Bits: 512
+  rayDistance: 1
+  rayHeight: 0.5
+  rayDirs: 1
+  maxSearchTimes: 100
+  isSoftenPath: 0
+  softenPathType: 0
+  softenFactor: 3
 --- !u!1 &7130366000277921271
 GameObject:
   m_ObjectHideFlags: 0

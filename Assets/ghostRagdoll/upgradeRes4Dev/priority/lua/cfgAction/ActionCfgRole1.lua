@@ -1,6 +1,12 @@
 ﻿local ActionCfgRole1 = {}
+local speedChgTime = 0
+local speed = 1
 ActionCfgRole1.randomSpeed = function()
-    return NumEx.NextInt(20, 60) / 10
+    if speedChgTime < DateEx.nowMS then
+        speedChgTime = DateEx.nowMS + 30000
+        speed = NumEx.NextInt(20, 60) / 10
+    end
+    return speed
 end
 
 ActionCfgRole1.walk = {
@@ -43,7 +49,6 @@ ActionCfgRole1.idel = {
         [JoinSpringKeys.max] = 90,
     }
 }
-
 
 --------------------------------------------
 return ActionCfgRole1
