@@ -206,12 +206,12 @@ namespace Coolape
             }
         }
 
-        int nextPahtIndex = 0;
-        float movePersent = 0;
-        bool finishOneSubPath = false;
-        float offsetSpeed = 0;
-        Vector3 diff4Moving = Vector3.zero;
-        Vector3 fromPos4Moving = Vector3.zero;
+        protected int nextPahtIndex = 0;
+        protected float movePersent = 0;
+        protected bool finishOneSubPath = false;
+        protected float offsetSpeed = 0;
+        protected Vector3 diff4Moving = Vector3.zero;
+        protected Vector3 fromPos4Moving = Vector3.zero;
         /// <summary>
         /// Begains the move.
         /// </summary>

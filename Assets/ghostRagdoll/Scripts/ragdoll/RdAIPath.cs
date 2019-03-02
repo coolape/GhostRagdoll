@@ -10,10 +10,10 @@ public class RdAIPath : CLSeekerByRay
         seek(pos);
     }
 
-    bool finishOneSubPath = false;
-    Vector3 fromPos4Moving = Vector3.zero;
-    Vector3 diff4Moving = Vector3.zero;
-    int nextPahtIndex = 0;
+    //bool finishOneSubPath = false;
+    //Vector3 fromPos4Moving = Vector3.zero;
+    //Vector3 diff4Moving = Vector3.zero;
+    //int nextPahtIndex = 0;
     public override void startMove()
     {
         canMove = false;
@@ -22,7 +22,7 @@ public class RdAIPath : CLSeekerByRay
             Debug.LogWarning("Path list error!");
             return;
         }
-        if (Vector3.Distance(mTransform.position, pathList[0]) < 0.001f)
+        if (Vector3.Distance(mTransform.position, pathList[0]) < endReachedDistance)
         {
             //说明是在原点
             finishOneSubPath = false;
@@ -48,7 +48,7 @@ public class RdAIPath : CLSeekerByRay
                 dis = Vector3.Distance(pathList[i - 1], pathList[i]);
                 dis1 = Vector3.Distance(mTransform.position, pathList[i - 1]);
                 dis2 = Vector3.Distance(mTransform.position, pathList[i]);
-                if (Mathf.Abs(dis - (dis1 + dis2)) < 0.001f)
+                if (Mathf.Abs(dis - (dis1 + dis2)) < endReachedDistance)
                 {
                     finishOneSubPath = false;
                     nextPahtIndex = i;
@@ -64,14 +64,17 @@ public class RdAIPath : CLSeekerByRay
 
     void checkNextPoint()
     {
-        if(Vector3.Distance(pathList[nextPahtIndex], transform.position) < endReachedDistance)
+        rotateTowards(pathList[nextPahtIndex] - mTransform.position, true);
+        float dis = Vector3.Distance(pathList[nextPahtIndex], transform.position);
+        //Debug.LogError(dis +"======="+ endReachedDistance);
+        if (dis <= endReachedDistance)
         {
             nextPahtIndex++;
             if(nextPahtIndex >= pathList.Count)
             {
                 canMove = false;
                 //到达目标点
-                Utl.doCallback(onFinishSeekCallback);
+                Utl.doCallback(onArrivedCallback);
             }
             else
             {

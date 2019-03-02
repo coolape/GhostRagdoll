@@ -1253,7 +1253,7 @@ MonoBehaviour:
   targetPos: {x: 0, y: 0, z: 0}
   speed: 1
   turningSpeed: 5
-  endReachedDistance: 0.2
+  endReachedDistance: 1.5
   canSearchPath: 1
   canMove: 0
   autoMoveOnFinishSeek: 1

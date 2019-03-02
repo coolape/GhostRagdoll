@@ -25,6 +25,7 @@ end
 
 function GrRolebase:init(csSelf, param)
     self:_init(csSelf)
+    self.state = RoleState.idel
 
     if param.isPlayer then
         self:dress("2")
@@ -39,11 +40,20 @@ function GrRolebase:setAction(actionName)
 end
 
 function GrRolebase:onFinishSeek(pathList, canReach)
-
+    if self.state == RoleState.walkAround then
+        if NumEx.NextBool() then
+            self:setAction("walk")
+        else
+            self:setAction("run")
+        end
+    end
 end
 
 function GrRolebase:onArrive()
-
+    self:setAction("idel")
+    if self.state == RoleState.walkAround then
+        self.csSelf:invoke4Lua(self:wrapFunction4CS(self.goAround), NumEx.NextInt(10, 50) / 10)
+    end
 end
 
 function GrRolebase:dress(name)
@@ -52,15 +62,12 @@ end
 
 -- 四处走走
 function GrRolebase:goAround()
-    if NumEx.NextBool() then
-        self:setAction("walk")
-    else
-        self:setAction("run")
-    end
+    self.state = RoleState.walkAround
+    self.seeker:moveTo(GrGame.getFreePos())
 
-    local dir = Vector3(NumEx.NextInt(-10, 10) / 10, 0, NumEx.NextInt(-10, 10) / 10)
-    Utl.RotateTowards(self.transform, dir)
-    self.csSelf:invoke4Lua(self:wrapFunction4CS(self.goAround), NumEx.NextInt(40, 100) / 10)
+    --local dir = Vector3(NumEx.NextInt(-10, 10) / 10, 0, NumEx.NextInt(-10, 10) / 10)
+    --Utl.RotateTowards(self.transform, dir)
+    --self.csSelf:invoke4Lua(self:wrapFunction4CS(self.goAround), NumEx.NextInt(40, 100) / 10)
 end
 --------------------------------------------
 return GrRolebase

@@ -14,7 +14,7 @@ GrGame.npcs = {}
 function GrGame.init(data, callback)
     GrGame._init()
 
-    for i = 1, 10 do
+    for i = 1, 1 do
         csSelf:invoke4Lua(function()
             GrGame.loadRole("role1", Vector3.zero,
                     function(role)
@@ -111,6 +111,10 @@ function GrGame.onDragJoy(dragDetla)
         Utl.RotateTowards(GrGame.player.transform, dir)
         --GrGame.player:moveForward(dir)
     end
+end
+
+function GrGame.getFreePos()
+    return Vector3(NumEx.NextInt(-20, 20), 0, NumEx.NextInt(-20, 20))
 end
 
 --------------------------------------------
