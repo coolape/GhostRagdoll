@@ -17,11 +17,15 @@ function GrRolebase:_init(csSelf)
     self.action = csSelf:GetComponent("RdAction")
     self.action:init()
     self.avata = csSelf:GetComponent("CLRoleAvata")
-    self.seeker = csSelf:GetComponent(seeker)
+    self.seeker = csSelf:GetComponent("RdAIPath")
+    if self.seeker then
+        self.seeker:init(self:wrapFunction4CS(self.onFinishSeek), nil, self:wrapFunction4CS(self.onArrive))
+    end
 end
 
 function GrRolebase:init(csSelf, param)
     self:_init(csSelf)
+
     if param.isPlayer then
         self:dress("2")
     else
@@ -32,6 +36,10 @@ end
 
 function GrRolebase:setAction(actionName)
     self.action:setAction(actionName)
+end
+
+function GrRolebase:onFinishSeek(pathList, canReach)
+
 end
 
 function GrRolebase:onArrive()
