@@ -60,7 +60,7 @@ end
 function GrPGame.uiEventDelegate(go)
     local goName = go.name;
     if goName == "ButtonAttach" then
-        
+        GrGame.attack()
     end
 end
 

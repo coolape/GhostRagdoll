@@ -50,5 +50,52 @@ ActionCfgRole1.idel = {
     }
 }
 
+ActionCfgRole1.push = {
+    [JoinName.leftUpperArm] = {
+        [JoinSpringKeys.speed] = 600,
+        [JoinSpringKeys.from] = 0,
+        [JoinSpringKeys.to] = 100,
+        [JoinSpringKeys.speed] = 3,
+        [JoinSpringKeys.curve] = 0,
+        [JoinSpringKeys.mode] = JoinSpringMode.pingpong,
+        [JoinSpringKeys.times] = 2,
+        [JoinSpringKeys.min] = 0,
+        [JoinSpringKeys.max] = 100,
+    },
+    [JoinName.rightUpperArm] = {
+        [JoinSpringKeys.speed] = 600,
+        [JoinSpringKeys.from] = 0,
+        [JoinSpringKeys.to] = 100,
+        [JoinSpringKeys.speed] = 3,
+        [JoinSpringKeys.curve] = 0,
+        [JoinSpringKeys.mode] = JoinSpringMode.pingpong,
+        [JoinSpringKeys.times] = 2,
+        [JoinSpringKeys.min] = 0,
+        [JoinSpringKeys.max] = 100,
+    },
+    [JoinName.leftForeArm] = {
+        [JoinSpringKeys.speed] = 600,
+        [JoinSpringKeys.from] = 0,
+        [JoinSpringKeys.to] = 130,
+        [JoinSpringKeys.speed] = 3,
+        [JoinSpringKeys.curve] = 0,
+        [JoinSpringKeys.mode] = JoinSpringMode.pingpong,
+        [JoinSpringKeys.times] = 2,
+        [JoinSpringKeys.min] = 0,
+        [JoinSpringKeys.max] = 135,
+    },
+    [JoinName.rightForeArm] = {
+        [JoinSpringKeys.speed] = 600,
+        [JoinSpringKeys.from] = 0,
+        [JoinSpringKeys.to] = 130,
+        [JoinSpringKeys.speed] = 3,
+        [JoinSpringKeys.curve] = 0,
+        [JoinSpringKeys.mode] = JoinSpringMode.pingpong,
+        [JoinSpringKeys.times] = 2,
+        [JoinSpringKeys.min] = 0,
+        [JoinSpringKeys.max] = 135,
+    },
+}
+
 --------------------------------------------
 return ActionCfgRole1

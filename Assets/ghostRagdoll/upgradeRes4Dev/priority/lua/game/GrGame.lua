@@ -113,6 +113,13 @@ function GrGame.onDragJoy(dragDetla)
     end
 end
 
+function GrGame.attack()
+    if GrGame.isPaused then
+        return
+    end
+    GrGame.player:setAction("pubsh")
+end
+
 function GrGame.getFreePos()
     return Vector3(NumEx.NextInt(-20, 20), 0, NumEx.NextInt(-20, 20))
 end
