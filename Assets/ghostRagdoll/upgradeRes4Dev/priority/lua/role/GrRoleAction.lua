@@ -116,9 +116,6 @@ function GrRoleAction.walkrightFinish(reverse)
         from = cfg[JoinSpringKeys.to]
         to = cfg[JoinSpringKeys.from]
     end
-    if joinMap[JoinName.rightThigh] == nil then
-        printe(JoinName.rightThigh)
-    end
     local rightThigh = joinMap[JoinName.rightThigh]
     rightThigh:spring(spring, from, to, GrRoleAction.getSpeed(speed), curve, min, max, mode, times, GrRoleAction.walkleftFinish, (reverse))
 end
