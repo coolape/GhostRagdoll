@@ -117,7 +117,7 @@ function GrGame.attack()
     if GrGame.isPaused then
         return
     end
-    GrGame.player:setAction("pubsh")
+    GrGame.player:setAction("push")
 end
 
 function GrGame.getFreePos()

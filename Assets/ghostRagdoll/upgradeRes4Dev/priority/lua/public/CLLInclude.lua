@@ -373,7 +373,7 @@ do
         rightThigh = "rightThigh", -- //右大腿
         thigh = "thigh", -- //大腿
         leftCalf = "leftCalf", --//左小腿
-        rightCalf = "rightThigh", --//右小腿
+        rightCalf = "rightCalf", --//右小腿
         calf = "calf", --//小腿
         leftFoot = "leftFoot", --//左脚
         rightFoot = "rightFoot", --;//右脚

@@ -4,7 +4,7 @@ local speed = 1
 ActionCfgRole1.randomSpeed = function()
     if speedChgTime < DateEx.nowMS then
         speedChgTime = DateEx.nowMS + 30000
-        speed = NumEx.NextInt(20, 60) / 10
+        speed = NumEx.NextInt(20, 50) / 10
     end
     return speed
 end
@@ -52,46 +52,46 @@ ActionCfgRole1.idel = {
 
 ActionCfgRole1.push = {
     [JoinName.leftUpperArm] = {
-        [JoinSpringKeys.speed] = 600,
+        [JoinSpringKeys.spring] = 600,
         [JoinSpringKeys.from] = 0,
         [JoinSpringKeys.to] = 100,
-        [JoinSpringKeys.speed] = 3,
+        [JoinSpringKeys.speed] = 1,
         [JoinSpringKeys.curve] = 0,
         [JoinSpringKeys.mode] = JoinSpringMode.pingpong,
-        [JoinSpringKeys.times] = 2,
+        [JoinSpringKeys.times] = 1,
         [JoinSpringKeys.min] = 0,
         [JoinSpringKeys.max] = 100,
     },
     [JoinName.rightUpperArm] = {
-        [JoinSpringKeys.speed] = 600,
+        [JoinSpringKeys.spring] = 600,
         [JoinSpringKeys.from] = 0,
         [JoinSpringKeys.to] = 100,
-        [JoinSpringKeys.speed] = 3,
+        [JoinSpringKeys.speed] = 1,
         [JoinSpringKeys.curve] = 0,
         [JoinSpringKeys.mode] = JoinSpringMode.pingpong,
-        [JoinSpringKeys.times] = 2,
+        [JoinSpringKeys.times] = 1,
         [JoinSpringKeys.min] = 0,
         [JoinSpringKeys.max] = 100,
     },
     [JoinName.leftForeArm] = {
-        [JoinSpringKeys.speed] = 600,
-        [JoinSpringKeys.from] = 0,
-        [JoinSpringKeys.to] = 130,
-        [JoinSpringKeys.speed] = 3,
+        [JoinSpringKeys.spring] = 1000,
+        [JoinSpringKeys.from] = 130,
+        [JoinSpringKeys.to] = 0,
+        [JoinSpringKeys.speed] = 1,
         [JoinSpringKeys.curve] = 0,
         [JoinSpringKeys.mode] = JoinSpringMode.pingpong,
-        [JoinSpringKeys.times] = 2,
+        [JoinSpringKeys.times] = 1,
         [JoinSpringKeys.min] = 0,
         [JoinSpringKeys.max] = 135,
     },
     [JoinName.rightForeArm] = {
-        [JoinSpringKeys.speed] = 600,
-        [JoinSpringKeys.from] = 0,
-        [JoinSpringKeys.to] = 130,
-        [JoinSpringKeys.speed] = 3,
+        [JoinSpringKeys.spring] = 1000,
+        [JoinSpringKeys.from] = 130,
+        [JoinSpringKeys.to] = 0,
+        [JoinSpringKeys.speed] = 1,
         [JoinSpringKeys.curve] = 0,
         [JoinSpringKeys.mode] = JoinSpringMode.pingpong,
-        [JoinSpringKeys.times] = 2,
+        [JoinSpringKeys.times] = 1,
         [JoinSpringKeys.min] = 0,
         [JoinSpringKeys.max] = 135,
     },
